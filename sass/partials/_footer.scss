@@ -1,0 +1,19 @@
+@import "mixins";
+
+footer {
+  //margin: 4% 4% 0 4%;
+  padding: 4%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  align-self: center;
+  font-size: 1.1rem;
+  font-style: italic;
+  div ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      margin-right: 20px;
+    }
+  }
+}

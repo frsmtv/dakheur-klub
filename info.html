@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="DAKHEUR KLUB">
+    <meta name="description" content="Dakheur Klub est un studio web basé à Lyon, et destiné à offrir des sites web sur mesure pour les artisans, artistes et acteurs du secteur culturel et associatif">
+    <title>Dakheur Klub - Studio web</title>
+
+    <!--**** FONTS ****-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+
+    <!--**** FAVICON ****-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="dist/css/bundle-sass.css">
+</head>
+
+<body class="animated fadeIn">
+
+<!--**** PRELOADER ****-->
+<div id="preloader">
+    <div id="status"></div>
+</div>
+
+<!--**** HEADER ****-->
+<header>
+
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="#">dakheur klub ?</a> </li>
+            <li><a href="#">portfolio</a> </li>
+            <li><a href="index.html"><img id="logo" src="dist/img/dakheur-klub-logo_v3-italic.png"> </a></li>
+            <li><a href="#">tarifs</a> </li>
+            <li><a href="#">contact</a> </li>
+        </ul>
+    </nav>
+
+</header>
+
+<!--**** MAIN CONTENT ****-->
+<main>
+
+    <!--**** DAKHEUR KLUB ? ****-->
+    <section class="animated fadeIn" id="info">
+
+        <img class="animated fadeIn animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100" src="dist/img/dakheur-klub-buro.jpg">
+
+        <p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+            Nous sommes François et Antoine, les fondateurs de Dakheur Klub.<br>
+            Nous avons respectivement 29 ans et plus de 29 ans, et sommes tous deux musiciens professionnels depuis de nombreuses années.</p>
+        <p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">Un jour nous avons réalisé que nous avions un intérêt commun pour le web et la communication. Ayant tous deux été souvent confrontés aux problématiques de communication, d'image et  de présence sur le web dans le cadre de nos projets, ainsi que de nombreux artistes avec qui nous avons discuté, nous avons décidé d'unir nos forces pour répondre à ces problématiques.</p>
+        <p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+            Notre coeur de métier est la conception et la réalisation de sites web sur mesure. Nous travaillons avec les dernières technologies, et écrivons du beau code, dans le respect des normes W3C. Nos sites web sont responsives, afin de garantir la meilleure expérience utilisateur quel que soit le support, et nous mettons un point d'honneur à sublimer votre message sous la forme la plus minimale et élégante possible.<br>
+            C'est le style Dakheur Klub !
+        </p>
+
+        <p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+            Dakheur Klub s'appuie sur un réseau de graphistes, photographes, développeurs, professionnels de la communication afin de vous proposer le service le plus complet possible, allant de la création d'une charte graphique et d'un logotype à l'élaboration d'une campagne de communication sur le web et en print, en plus de votre site web.
+        </p>
+
+        <!--<img class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100" src="dist/img/dakheur-klub-buro2.jpg">-->
+
+    </section> <!-- END: info -->
+    
+</main>
+
+
+
+<!--**** FOOTER ****-->
+<footer class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+
+    <div class="footer-col">
+        <a href="index.html">Dakheur Klub | Studio Web</a><br>
+        <adress>Lyon 7ème<br></adress>
+    </div>
+
+    <div class="footer-col">
+        <a href="tel:0663351022">+33 663351022</a><br>
+        <a href="mailto:hello@dakheurklub.fr">hello@dakheurklub.fr</a>
+    </div>
+
+    <div class="footer-col">
+        <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+            </a> </li>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+            </a> </li>
+        </ul>
+    </div>
+
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.transit.js"></script>
+<script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+<!--**** PRELOADER ****-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    });
+    //]]>
+</script>
+
+</body>
+</html>

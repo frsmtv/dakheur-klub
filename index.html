@@ -9,7 +9,7 @@
     <title>Dakheur Klub - Studio web</title>
 
     <!--**** FONTS ****-->
-    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
 
     <!--**** FAVICON ****-->
 
@@ -18,17 +18,69 @@
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
-<body>
+<body class="animated fadeIn">
+
+<!--**** PRELOADER ****-->
+<div id="preloader">
+    <div id="status"></div>
+</div>
 
 <!--**** HEADER ****-->
 <header>
+
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="info.html">dakheur klub ?</a> </li>
+            <li><a href="#">portfolio</a> </li>
+            <li><a href="index.html"><img id="logo" src="dist/img/dakheur-klub-logo_v3-italic.png"> </a></li>
+            <li><a href="#">tarifs</a> </li>
+            <li><a href="#">contact</a> </li>
+        </ul>
+    </nav>
 
 </header>
 
 <!--**** MAIN CONTENT ****-->
 <main>
 
-</main>
+    <!--******** INTRO BUBBLE_Y ********-->
+    <div id="intro" class="animated fadeIn">
+
+        <div id="quotes">
+
+            <div class="quote">
+            <p class="text">
+                Bienvenue chez<br>
+                Dakheur Klub !
+            </p>
+            </div>
+
+            <div class="quote">
+            <p class="text">
+                Dakheur Klub est un studio web
+                spécialisé dans l'artisanat
+                et le secteur culturel</p>
+            <p class="text">basé à Lyon.</p>
+            </div>
+
+            <div class="quote">
+            <p class="text">
+                Vous avez un projet, et souhaitez que nous travaillions ensemble,
+                ou vous avez besoin de conseil ?</p>
+            <p class="text">Contactez-nous et prenons un café ensemble !</p>
+            </div>
+
+            <div class="quote">
+            <p class="text">
+            </p>
+            </div>
+
+        </div> <!-- End: quotes -->
+
+    </div> <!-- END: intro -->
+
+
 
 <!--**** FOOTER ****-->
 <foooter>
@@ -36,6 +88,19 @@
 </foooter>
 
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery.lettering.js"></script>
+<script src="js/main.js"></script>
+
+<!--**** PRELOADER ****-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    });
+    //]]>
+</script>
 
 </body>
 </html>
