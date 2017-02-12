@@ -1,0 +1,15 @@
+@import "mixins";
+
+section#portfolio {
+  div.row {
+    display: flex;
+    article {
+      margin: 4%;
+      //border: 4px solid #fff;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

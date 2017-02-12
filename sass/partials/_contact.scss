@@ -1,0 +1,22 @@
+@import "mixins";
+
+section#contact {
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+    font-style: italic;
+    span {
+      font-size: 80%;
+    }
+  }
+  ul {
+    li {
+      font-size: 2rem;
+      font-style: italic;
+      &:first-child {
+        font-size: 3rem;
+        margin-bottom: 3%;
+      }
+    }
+  }
+}

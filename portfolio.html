@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
-<body id="index-page" class="animated fadeIn">
+<body id="portfolio-page" class="animated fadeIn">
 
 <!--**** PRELOADER ****-->
 <div id="preloader">
@@ -28,7 +28,6 @@
 
 <!--**** HEADER ****-->
 <header>
-
 
     <nav id="main-nav">
         <ul>
@@ -45,56 +44,63 @@
 <!--**** MAIN CONTENT ****-->
 <main>
 
-    <!--******** INTRO BUBBLE_Y ********-->
-    <div id="intro" class="animated fadeIn">
+    <!--**** PORTFOLIO ****-->
+    <section id="portfolio">
 
-        <div id="quotes">
+        <div class="row">
 
-            <div data-tilt class="quote">
-            <p class="text">
-                Bienvenue chez<br>
-                Dakheur Klub !
-            </p>
-            </div>
+            <article class="portfolio animate" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <a href="#"><img src="dist/img/screenshot-six-ring-circus.png"> </a>
+            </article>
 
-            <div data-tilt class="quote">
-            <p class="text">
-                Nous sommes un studio web
-                spécialisé dans les secteurs artistique, culturel et de l'artisanat.</p>
-            <p class="text">Nous sommes basés à Lyon.</p>
-            </div>
+            <article class="portfolio animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <a href="#"><img src="dist/img/screenshot-iray.png"> </a>
+            </article>
 
-            <div data-tilt class="quote">
-                <p class="text">
-                    Nous concevons et réalisons votre site web, et vous accompagnons dans l'élaboration de votre identité et le développement de votre présence sur le web.</p>
-                <p class="text"></p>
-            </div>
+        </div> <!-- END: row -->
 
-            <div data-tilt class="quote">
-            <p class="text">
-                Vous avez un projet, et souhaitez que nous travaillions ensemble,
-                ou avez besoin de conseils ?</p>
-            <p class="text">Contactez-nous !</p>
-            </div>
+        <div class="row">
 
-            <div class="quote">
-            <p class="text">
-            </p>
-            </div>
+            <article class="portfolio animate" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <a href="#"><img src="dist/img/screenshot-woco.png"> </a>
+            </article>
 
-        </div> <!-- End: quotes -->
+            <article class="portfolio animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <a href="#"><img src="dist/img/screenshot-kemptown.png"> </a>
+            </article>
 
-    </div> <!-- END: intro -->
+        </div> <!-- END: row -->
+
+    </section> <!-- END: portfolio -->
+
+</main>
 
 
 
 <!--**** FOOTER ****-->
-<foooter>
+<footer>
 
-</foooter>
+    <div class="footer-col">
+        <p>Dakheur Klub | Studio Web - Lyon</p>
+    </div>
+
+    <div class="footer-col">
+        <ul>
+            <li><a href="mailto:hello@dakheurklub.fr"><i class="fa fa-envelope" aria-hidden="true"></i>
+            </a></li>
+            <li><a href="tel:0663351022"><i class="fa fa-mobile" aria-hidden="true"></i>
+            </a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+            </a> </li>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+            </a> </li>
+        </ul>
+    </div>
+
+</footer>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery.lettering.js"></script>
+<script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
 <script src="tilt.js/src/tilt.jquery.js"></script>
 <script src="js/main.js"></script>
 

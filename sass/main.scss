@@ -3,6 +3,9 @@
 @import "partials/quotes";
 @import "partials/info";
 @import "partials/footer";
+@import "partials/portfolio";
+@import "partials/contact";
+//@import "partials/buttons";
 
 html, body {
   padding: 0;
@@ -11,25 +14,9 @@ html, body {
   font: $mainFont;
   color: $mainColor;
   font-size: 16px;
-  //background: #E0EAFC; /* fallback for old browsers */
-  //background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
-  //background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  //background: #8e9eab; /* fallback for old browsers */
-  //background: -webkit-linear-gradient(to left, #8e9eab , #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
-  //background: linear-gradient(to left, #8e9eab , #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  //background: #ECE9E6; /* fallback for old browsers */
-  //background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
-  //background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  //background: #EDE574; /* fallback for old browsers */
-  //background: -webkit-linear-gradient(to left, #EDE574 , #E1F5C4); /* Chrome 10-25, Safari 5.1-6 */
-  //background: linear-gradient(to left, #EDE574 , #E1F5C4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  background: url("../img/dakheur-klub-buro.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+  background: #E0EAFC; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 ul {
@@ -41,16 +28,21 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+  -webkit-transition: all 400ms ease-in;
+  -moz-transition: all 400ms ease-in;
+  -ms-transition: all 400ms ease-in;
+  -o-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+  &:hover {
+    opacity: .6;
+  }
 }
 
 
 main {
-  padding: 4%;
   section {
     margin-top: 150px;
-    img {
-      width: 100%;
-    }
+
     p {
       font-size: 2rem;
       font-style: italic;
@@ -59,5 +51,4 @@ main {
       letter-spacing: 1px;
     }
   }
-
 }

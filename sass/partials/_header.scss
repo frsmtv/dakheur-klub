@@ -2,10 +2,14 @@
 
 header {
   text-align: center;
-  background: #fff;
+  //background: #ECE9E6; /* fallback for old browsers */
+  //background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF); /* Chrome 10-25, Safari 5.1-6 */
+  //background: linear-gradient(to left, #ECE9E6 , #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  //background: #D66D75; /* fallback for old browsers */
+  //background: -webkit-linear-gradient(to left, #D66D75 , #E29587); /* Chrome 10-25, Safari 5.1-6 */
+  //background: linear-gradient(to left, #D66D75 , #E29587); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   nav#main-nav {
-    position: fixed;
-    width: 100%;
     ul {
       padding: 0 4%;
       display: flex;
@@ -15,22 +19,15 @@ header {
         align-self: center;
         img {
           padding-top: 2%;
-          height: 150px;
+          height: 75px;
         }
         a {
-          color: $navColor;
+          color: #333;
           letter-spacing: 1px;
           font-size: 1.2rem;
           font-style: italic;
           padding: 0 2px;
-          -webkit-transition: all 400ms ease-in;
-          -moz-transition: all 400ms ease-in;
-          -ms-transition: all 400ms ease-in;
-          -o-transition: all 400ms ease-in;
-          transition: all 400ms ease-in;
           &:hover {
-            background: $navColor;
-            color: #fff;
           }
         }
       }

@@ -15,11 +15,12 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="PreLoadMe/css/styles.css">
     <link rel="stylesheet" href="modern-slide-in/css/sequence-theme.modern-slide-in.css">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
-<body class="animated fadeIn">
+<body id="info-page" class="animated fadeIn">
 
 <!--**** PRELOADER ****-->
 <div id="preloader">
@@ -29,21 +30,20 @@
 <!--**** HEADER ****-->
 <header>
 
-
     <nav id="main-nav">
         <ul>
-            <li><a href="#">dakheur klub ?</a> </li>
-            <li><a href="#">portfolio</a> </li>
-            <li><a href="index.html"><img id="logo" src="dist/img/dakheur-klub-logo_v3-italic.png"> </a></li>
-            <li><a href="#">tarifs</a> </li>
-            <li><a href="#">contact</a> </li>
+            <li><a href="index.html">intro</a> </li>
+            <li><a href="info.html">qui / quoi</a> </li>
+            <li data-tilt><a href="index.html"><img id="logo" src="dist/img/dakheur-klub-logo_v3-italic.png"> </a></li>
+            <li><a href="portfolio.html">portfolio</a> </li>
+            <li><a href="contact.html">contact</a> </li>
         </ul>
     </nav>
 
 </header>
 
 <!--**** MAIN CONTENT ****-->
-<main>
+<main class="animated fadeInUp">
 
     <!--**** DAKHEUR KLUB ? ****-->
     <!--<section class="animated fadeIn" id="info">-->
@@ -76,8 +76,8 @@
 
                     </div>
 
-                    <div class="seq-title">
-                        <h2 data-seq>Nous sommes François et Antoine, les fondateurs de Dakheur Klub.</h2>
+                    <div data-tilt class="seq-title">
+                        <h2 data-seq>Hello ! Nous sommes François et Antoine, les fondateurs de Dakheur Klub</h2>
                         <h3 data-seq>Nous avons respectivement 29 ans et plus de 29 ans, et sommes tous deux musiciens professionnels depuis de nombreuses années.</h3>
                     </div>
                 </li>
@@ -87,9 +87,9 @@
 
                     </div>
 
-                    <div class="seq-title">
-                        <h2 data-seq>Un jour nous avons réalisé que nous avions un intérêt commun pour le web et la communication.</h2>
-                        <h3 data-seq><p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100"> Ayant tous deux été souvent confrontés aux problématiques de communication, d'image et  de présence sur le web dans le cadre de nos projets, ainsi que de nombreux artistes avec qui nous avons discuté, nous avons décidé d'unir nos forces pour répondre à ces problématiques.</p></h3>
+                    <div data-tilt class="seq-title">
+                        <h2 data-seq>Un jour nous avons réalisé que nous avions un intérêt commun pour le web et la communication</h2>
+                        <h3 data-seq>Ayant tous deux été souvent confrontés aux problématiques de communication, d'image et  de présence sur le web dans le cadre de nos projets, ainsi que de nombreux artistes avec qui nous avons discuté, nous avons décidé d'unir nos forces pour répondre à ces problématiques.</h3>
                     </div>
                 </li>
 
@@ -98,8 +98,8 @@
 
                     </div>
 
-                    <div class="seq-title">
-                        <h2 data-seq>Notre coeur de métier est la conception et la réalisation de sites web sur mesure.</h2>
+                    <div data-tilt class="seq-title">
+                        <h2 data-seq>Notre coeur de métier est la conception et la réalisation de sites web sur mesure</h2>
                         <h3 data-seq> Nous travaillons avec les dernières technologies, et écrivons du beau code, dans le respect des normes W3C. Nos sites web sont responsives, afin de garantir la meilleure expérience utilisateur quel que soit le support, et nous mettons un point d'honneur à sublimer votre message sous la forme la plus minimale et élégante possible.
                             C'est le style Dakheur Klub !</h3>
                     </div>
@@ -110,9 +110,9 @@
 
                     </div>
 
-                    <div class="seq-title">
-                        <h2 data-seq>Dakheur Klub s'appuie sur un réseau de graphistes, photographes, développeurs, professionnels de la communication,</h2>
-                        <h3 data-seq> afin de vous proposer le service le plus complet possible, allant de la création d'une charte graphique et d'un logotype à l'élaboration d'une campagne de communication sur le web et en print, en plus de votre site web.</h3>
+                    <div data-tilt class="seq-title">
+                        <h2 data-seq>Dakheur Klub s'appuie sur un réseau de graphistes, photographes, développeurs, professionnels de la communication</h2>
+                        <h3 data-seq> afin de vous proposer le service le plus complet possible, allant de la création d'une charte graphique et d'un logotype à l'élaboration d'une campagne de communication web et print, en plus de votre site web.</h3>
                     </div>
                 </li>
             </ul>
@@ -122,26 +122,24 @@
                             <button type="button" class="seq-next" aria-label="Next">Next</button>
                         </fieldset>
                     </div>
-
+    </div>
 </main>
 
 
 
-                <!--**** FOOTER ****-->
-<footer class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+<!--**** FOOTER ****-->
+<footer class="animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="100">
 
     <div class="footer-col">
-        <a href="index.html">Dakheur Klub | Studio Web</a><br>
-        <adress>Lyon 7ème<br></adress>
-    </div>
-
-    <div class="footer-col">
-        <a href="tel:0663351022">+33 663351022</a><br>
-        <a href="mailto:hello@dakheurklub.fr">hello@dakheurklub.fr</a>
+        <p>Dakheur Klub | Studio Web - Lyon</p>
     </div>
 
     <div class="footer-col">
         <ul>
+            <li><a href="mailto:hello@dakheurklub.fr"><i class="fa fa-envelope" aria-hidden="true"></i>
+            </a></li>
+            <li><a href="tel:0663351022"><i class="fa fa-mobile" aria-hidden="true"></i>
+            </a></li>
             <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
             </a> </li>
             <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
@@ -152,13 +150,12 @@
 </footer>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery.transit.js"></script>
-<script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
 <script src="modern-slide-in/scripts/imagesloaded.pkgd.min.js"></script>
 <script src="modern-slide-in/scripts/hammer.min.js"></script>
 <script src="modern-slide-in/scripts/respond.min.js"></script>
 <script src="modern-slide-in/scripts/sequence.min.js"></script>
 <script src="modern-slide-in/scripts/sequence-theme.modern-slide-in.min.js"></script>
+<script src="tilt.js/src/tilt.jquery.js"></script>
 <script src="js/main.js"></script>
 
 <!--**** PRELOADER ****-->

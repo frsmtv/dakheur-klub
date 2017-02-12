@@ -1,13 +1,14 @@
 @import "mixins";
 
 #intro {
-  margin-top: 200px;
+  height: 100vh;
   #quotes {
     font-size: 3rem;
     letter-spacing: 2px;
     text-align: center;
     font-style: italic;
     .quote {
+      padding: 25vh 4% 0 4%;
       line-height: 1.4;
       text-align: center;
       &:first-child {
@@ -19,7 +20,6 @@
           display: block;
         }
         p.text {
-          background: rgba(225, 225, 225, .8);
           margin: 0;
           padding: 0;
         }

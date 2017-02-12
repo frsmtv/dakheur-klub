@@ -1,19 +1,26 @@
 @import "mixins";
 
 footer {
-  //margin: 4% 4% 0 4%;
-  padding: 4%;
+  background: #fff;
   display: flex;
   justify-content: space-between;
-  line-height: 2;
   align-self: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  text-align: center;
   font-style: italic;
+  padding: 1% 4%;
+  p {
+    margin: 0;
+  }
   div ul {
     display: flex;
     justify-content: space-between;
     li {
-      margin-right: 20px;
+      margin-left: 40px;
     }
+  }
+  #copy {
+    display: block;
+    margin: 0 auto;
   }
 }

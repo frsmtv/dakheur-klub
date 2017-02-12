@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // ********** TEXT ANIM BUBBLE-Y **********
     var $quotes = $('#quotes .quote'),
-        opts = { fadeTime: 1000, dwellTime: 5000 },
+        opts = { fadeTime: 1000, dwellTime: 6000 },
         shuffle,
         fadeInQuote,
         fadeOutQuote,
@@ -84,15 +84,14 @@ $(document).ready(function() {
         scroll_start = $(this).scrollTop();
         if (scroll_start > offset.top) {
             $('#logo').addClass('animated fadeOut');
-            $('#main-nav').addClass('animated fadeOutUp')
+            $('header').addClass('animated fadeOutUp')
         } else {
             $('#logo').removeClass('fadeOut').addClass('fadeIn');
-            $('#main-nav').removeClass('fadeOutUp').addClass('fadeInDown')
+            $('header').removeClass('fadeOutUp').addClass('fadeInDown')
         }
     });
 
     // **** SCROLLA ****
     $('.animate').scrolla();
-
 
 });
