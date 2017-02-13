@@ -172,11 +172,13 @@ html,
   background: url("../images/bt-prev.png");
 }
 
-.seq .seq-prev:focus,
 .seq .seq-prev:hover {
   -webkit-transform: translate3d(-4px, 0, 0);
   -ms-transform: translate3d(-4px, 0, 0);
   transform: translate3d(-4px, 0, 0);
+}
+.seq-prev:focus, .seq-next:focus {
+    outline: none!important;
 }
 
 .seq .seq-model,
