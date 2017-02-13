@@ -83,11 +83,9 @@ $(document).ready(function() {
     $(document).scroll(function() {
         scroll_start = $(this).scrollTop();
         if (scroll_start > offset.top) {
-            $('#logo').addClass('animated fadeOut');
-            $('header').addClass('animated fadeOutUp')
+            $('header.moove').addClass('animated fadeOutUp')
         } else {
-            $('#logo').removeClass('fadeOut').addClass('fadeIn');
-            $('header').removeClass('fadeOutUp').addClass('fadeInDown')
+            $('header.moove').removeClass('fadeOutUp').addClass('fadeInDown')
         }
     });
 
