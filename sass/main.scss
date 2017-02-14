@@ -34,7 +34,7 @@ a {
   -o-transition: all 400ms ease-in;
   transition: all 400ms ease-in;
   &:hover {
-    opacity: .6;
+    color: $secondColor;
   }
 }
 

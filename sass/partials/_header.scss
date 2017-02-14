@@ -3,6 +3,10 @@
 header {
   text-align: center;
   nav#main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
     ul {
       padding: 0 4%;
       display: flex;
@@ -14,8 +18,18 @@ header {
           padding-top: 2%;
           height: 75px;
         }
-        a {
+        a.non-active {
           color: #333;
+          letter-spacing: 1px;
+          font-size: 1.3rem;
+          font-style: italic;
+          padding: 0 2px;
+          &:hover {
+            color: $secondColor;
+          }
+        }
+        a.active {
+          color: $secondColor;
           letter-spacing: 1px;
           font-size: 1.3rem;
           font-style: italic;

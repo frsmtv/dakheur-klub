@@ -1,16 +1,9 @@
 #clouds {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   z-index: -1000;
   #clouds-wrapper {
-    //position: relative;
   }
-  img {
-    width: 20%;
-    &:first-child {
-      width: 40%;
-      left: 0;
-    }
-    }
-  }
+}
+

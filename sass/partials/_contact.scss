@@ -1,23 +1,14 @@
 @import "mixins";
 
 section#contact {
-  margin-top: 0!important;
   padding-top: 150px;
   text-align: center;
-  h2 {
-    font-size: 3rem;
-    font-style: italic;
-    margin: 0 0 2% 0;
-    span {
-      font-size: 80%;
-    }
-  }
   ul {
     li {
       font-size: 2rem;
       font-style: italic;
       &:first-child {
-        font-size: 3rem;
+        font-size: 4rem;
         margin-bottom: 3%;
       }
     }

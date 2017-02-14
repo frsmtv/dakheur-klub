@@ -19,40 +19,40 @@
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
-<body id="index-page" class="animated fadeIn">
+<body id="index-page" class="animated fadeInDown">
 
 <!--**** PRELOADER ****-->
-<div id="preloader">
-    <div id="status"></div>
-</div>
+<!--<div id="preloader">-->
+    <!--<div id="status"></div>-->
+<!--</div>-->
 
 <!--**** HEADER ****-->
 <header>
 
     <nav id="main-nav">
         <ul>
-            <li><a href="index.html">intro</a> </li>
-            <li><a href="info.html">qui / quoi</a> </li>
+            <li><a class="active" href="index.html">intro</a> </li>
+            <li><a class="non-active" href="info.html">qui / quoi</a> </li>
             <li data-tilt><a href="index.html"><img id="logo" src="dist/img/dakheur-klub-logo_v3-italic.png"> </a></li>
-            <li><a href="portfolio.html">portfolio</a> </li>
-            <li><a href="contact.html">contact</a> </li>
+            <li><a class="non-active" href="portfolio.html">portfolio</a> </li>
+            <li><a class="non-active" href="contact.html">contact</a> </li>
         </ul>
     </nav>
 
 </header>
 
 <!--**** MAIN CONTENT ****-->
-<main>
+<main data-tilt>
 
     <!--**** CLOUDS ****-->
     <div id="clouds">
 
         <div id="clouds-wrapper">
 
-            <img data-tilt src="dist/img/cloud.png">
-            <img data-tilt src="dist/img/cloud.png">
-            <img data-tilt src="dist/img/cloud.png">
-            <img data-tilt src="dist/img/cloud.png">
+            <img class="animated fadeInUp" style="width: 40%;" src="dist/img/cloud.png">
+            <img class="animated fadeInUp" style="width: 10%" src="dist/img/cloud.png">
+            <img class="animated fadeInUp" style="width: 25%; margin-left: 20%" src="dist/img/cloud.png">
+            <img class="animated fadeInUp" style="margin-left: 50%; width: 30%;" src="dist/img/cloud.png">
 
         </div> <!-- END: clouds-wrapper -->
 

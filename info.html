@@ -28,15 +28,15 @@
 </div>
 
 <!--**** HEADER ****-->
-<header class="moove">
+<header>
 
     <nav id="main-nav">
         <ul>
-            <li><a href="index.html">intro</a> </li>
-            <li><a href="info.html">qui / quoi</a> </li>
-            <li data-tilt><a href="index.html"><img id="logo" src="dist/img/dakheur-klub-logo_v3-italic.png"> </a></li>
-            <li><a href="portfolio.html">portfolio</a> </li>
-            <li><a href="contact.html">contact</a> </li>
+            <li><a class="non-active" href="index.html">intro</a> </li>
+            <li><a class="active" href="info.html">qui / quoi</a> </li>
+            <li data-tilt><a  href="index.html"><img id="logo" src="dist/img/dakheur-klub-logo_v3-italic.png"> </a></li>
+            <li><a class="non-active" href="portfolio.html">portfolio</a> </li>
+            <li><a class="non-active" href="contact.html">contact</a> </li>
         </ul>
     </nav>
 
@@ -45,39 +45,26 @@
 <!--**** MAIN CONTENT ****-->
 <main class="animated fadeInUp">
 
-    <!--**** DAKHEUR KLUB ? ****-->
-    <!--<section class="animated fadeIn" id="info">-->
+    <div id="info-img-wrapper">
 
-        <!--<img class="animated fadeIn animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100" src="dist/img/dakheur-klub-buro.jpg">-->
+        <img src="dist/img/elephant.png">
+        <img src="dist/img/mouse.png">
 
-        <!--<p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">-->
-            <!--Nous sommes François et Antoine, les fondateurs de Dakheur Klub.<br>-->
-            <!--Nous avons respectivement 29 ans et plus de 29 ans, et sommes tous deux musiciens professionnels depuis de nombreuses années.</p>-->
-        <!--<p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">Un jour nous avons réalisé que nous avions un intérêt commun pour le web et la communication. Ayant tous deux été souvent confrontés aux problématiques de communication, d'image et  de présence sur le web dans le cadre de nos projets, ainsi que de nombreux artistes avec qui nous avons discuté, nous avons décidé d'unir nos forces pour répondre à ces problématiques.</p>-->
-        <!--<p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">-->
-            <!--Notre coeur de métier est la conception et la réalisation de sites web sur mesure. Nous travaillons avec les dernières technologies, et écrivons du beau code, dans le respect des normes W3C. Nos sites web sont responsives, afin de garantir la meilleure expérience utilisateur quel que soit le support, et nous mettons un point d'honneur à sublimer votre message sous la forme la plus minimale et élégante possible.<br>-->
-            <!--C'est le style Dakheur Klub !-->
-        <!--</p>-->
-
-        <!--<p class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">-->
-            <!--Dakheur Klub s'appuie sur un réseau de graphistes, photographes, développeurs, professionnels de la communication afin de vous proposer le service le plus complet possible, allant de la création d'une charte graphique et d'un logotype à l'élaboration d'une campagne de communication sur le web et en print, en plus de votre site web.-->
-        <!--</p>-->
-
-        <!--&lt;!&ndash;<img class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100" src="dist/img/dakheur-klub-buro2.jpg">&ndash;&gt;-->
-
-    <!--</section> &lt;!&ndash; END: info &ndash;&gt;-->
+    </div> <!-- END: info-img-wrapper -->
 
     <div id="sequence" class="seq">
 
         <div class="seq-screen">
             <ul class="seq-canvas">
+
                 <li class="seq-in">
                     <div class="seq-model">
                     </div>
 
                     <div class="seq-title">
-                        <h2 data-seq>Hello ! Nous sommes François et Antoine, les fondateurs de Dakheur Klub</h2>
+                        <h2 data-seq> Hello ! Nous sommes François et Antoine, les fondateurs de Dakheur Klub</h2>
                         <h3 data-seq>Nous avons respectivement 29 ans et plus de 29 ans, et sommes tous deux musiciens professionnels depuis de nombreuses années.</h3>
+
                     </div>
                 </li>
 
@@ -86,7 +73,7 @@
                     </div>
 
                     <div class="seq-title">
-                        <h2 data-seq>Un jour nous avons réalisé que nous avions un intérêt commun pour le web et la communication</h2>
+                        <h2 data-seq>Un jour nous avons réalisé que nous avions également un intérêt commun pour le web et la communication</h2>
                         <h3 data-seq>Ayant tous deux été souvent confrontés aux problématiques de communication, d'image et  de présence sur le web dans le cadre de nos projets, ainsi que de nombreux artistes avec qui nous avons discuté, nous avons décidé d'unir nos forces pour répondre à ces problématiques.</h3>
                     </div>
                 </li>
@@ -99,6 +86,7 @@
                         <h2 data-seq>Notre coeur de métier est la conception et la réalisation de sites web sur mesure</h2>
                         <h3 data-seq> Nous travaillons avec les dernières technologies, et écrivons du beau code, dans le respect des normes W3C. Nos sites web sont responsives, afin de garantir la meilleure expérience utilisateur quel que soit le support, et nous mettons un point d'honneur à sublimer votre message sous la forme la plus minimale et élégante possible.
                             C'est le style Dakheur Klub !</h3>
+
                     </div>
                 </li>
 
@@ -117,19 +105,32 @@
                     </div>
 
                     <div class="seq-title">
-                        <h2 data-seq>Artisans, artistes, nous vous comprennons !</h2>
-                        <h3 data-seq>En travaillant avec Dakheur Klub, vous êtes sûrs que vos interlocuteurs parleront la même langue que vous. <br>
-                            Notre philosophie est de faire en sorte que les projets se concrétisent, et pour cela nous adaptons nos tarifs à votre projet, à vos besoins.<br>
-                        N'hésitez pas à nous contacter pour toute question / demande de devis. Nous seront ravis de vous répondre !</h3>
+                        <h2 style="background: #d81b60" data-seq>Nous sommes des artisans</h2>
+                        <h3 data-seq>
+                            Notre philosophie est de faire en sorte que les projets se concrétisent, et pour cela nous faisons preuve d'une écoute active, et adaptons nos tarifs à votre projet, à vos besoins.<br>
+                        N'hésitez pas à nous contacter pour toute question / demande de devis. Nous serons ravis de vous répondre !<br>
+                            <a style="background: #d81b60; color: #fff; font-size: 100%; padding: 2px 2%;" href="contact.html">contact</a>
+                        </h3>
                     </div>
                 </li>
+
+                <li>
+                    <div class="seq-model">
+                    </div>
+
+                    <div class="seq-title">
+                        <h2 style="color: #d81b60; background: none; font-style: italic; font-size: 3rem" data-seq>FIN</h2>
+                    </div>
+                </li>
+
             </ul>
 
-                        <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
-                            <button type="button" class="seq-prev" aria-label="Previous">Previous</button>
-                            <button type="button" class="seq-next" aria-label="Next">Next</button>
-                        </fieldset>
-                    </div>
+            <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+                <button type="button" class="seq-prev" aria-label="Previous">Previous</button>
+                <button type="button" class="seq-next" aria-label="Next">Next</button>
+            </fieldset>
+
+        </div>
     </div>
 </main>
 
@@ -145,8 +146,6 @@
     <div class="footer-col">
         <ul>
             <li><a href="mailto:hello@dakheurklub.fr"><i class="fa fa-envelope" aria-hidden="true"></i>
-            </a></li>
-            <li><a href="tel:0663351022"><i class="fa fa-mobile" aria-hidden="true"></i>
             </a></li>
             <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
             </a> </li>
