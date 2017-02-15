@@ -9,6 +9,9 @@ footer {
   text-align: center;
   font-style: italic;
   padding: 1% 4%;
+  a:hover {
+    opacity: .6;
+  }
   p {
     margin: 0;
   }
@@ -18,9 +21,5 @@ footer {
     li {
       margin-left: 40px;
     }
-  }
-  #copy {
-    display: block;
-    margin: 0 auto;
   }
 }
