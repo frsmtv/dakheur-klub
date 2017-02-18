@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="DAKHEUR KLUB">
+    <meta name="description" content="Dakheur Klub est un studio web basé à Lyon, et destiné à offrir des sites web sur mesure pour les artisans, artistes et acteurs du secteur culturel et associatif">
+    <title>Dakheur Klub - Studio web</title>
+
+    <!--**** FONTS ****-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+
+    <!--**** FAVICON ****-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="PreLoadMe/css/styles.css">
+    <link rel="stylesheet" href="css/bundle-sass.css">
+</head>
+
+<body id="portfolio-page" class="animated fadeIn">
+
+<!--**** PRELOADER ****-->
+<div id="preloader">
+    <div id="status"></div>
+</div>
+
+<!--**** HEADER ****-->
+<header>
+
+    <nav id="main-nav" class="moove">
+        <ul>
+            <li data-tilt><a  href="index.html"><img id="logo" src="img/dakheur-klub-logo_v3-italic.png"> </a></li>
+            <li><a class="non-active" href="info.html">qui / quoi</a> </li>
+            <li><a class="active" href="portfolio.html">portfolio</a> </li>
+            <li><a class="non-active" href="contact.html">contact</a> </li>
+        </ul>
+    </nav>
+
+</header>
+
+<!--**** MAIN CONTENT ****-->
+<main>
+
+    <!--**** PORTFOLIO ****-->
+    <section id="portfolio">
+
+        <div class="row">
+
+            <article class="portfolio animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <a href="#"><img src="img/screenshot-six-ring-circus.png"> </a>
+            </article>
+
+            <article class="portfolio animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <a href="#"><img src="img/screenshot-iray.png"> </a>
+            </article>
+
+        </div> <!-- END: row -->
+
+        <div class="row">
+
+            <article class="portfolio animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <a href="#"><img src="img/screenshot-woco.png"> </a>
+            </article>
+
+            <article class="portfolio animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <a href="#"><img src="img/screenshot-kemptown.png"> </a>
+            </article>
+
+        </div> <!-- END: row -->
+
+    </section> <!-- END: portfolio -->
+
+</main>
+
+
+
+<!--**** FOOTER ****-->
+<footer>
+
+    <div class="footer-col">
+        <p>Dakheur Klub / Studio Web - Lyon</p>
+    </div>
+
+    <div class="footer-col">
+        <ul>
+            <li><a href="mailto:hello@dakheurklub.fr"><i class="fa fa-envelope" aria-hidden="true"></i>
+            </a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+            </a> </li>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+            </a> </li>
+        </ul>
+    </div>
+
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
+<script src="tilt.js/src/tilt.jquery.js"></script>
+<script src="js/main.js"></script>
+
+<!--**** PRELOADER ****-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    });
+    //]]>
+</script>
+
+</body>
+</html>
