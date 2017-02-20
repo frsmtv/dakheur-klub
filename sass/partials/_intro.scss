@@ -1,0 +1,19 @@
+@import "mixins";
+
+#intro {
+  line-height: 4;
+  p {
+    line-height: 2;
+    a {
+      padding: 1%;
+      text-transform: uppercase;
+      font-size: 60%;
+      letter-spacing: 4px;
+      color: #fff;
+      background: $secondColor;
+      &:hover {
+        opacity: .6;
+      }
+    }
+  }
+}

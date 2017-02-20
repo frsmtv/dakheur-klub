@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="DAKHEUR KLUB">
+    <meta name="description" content="Dakheur Klub est un studio web basé à Lyon, et destiné à offrir des sites web sur mesure pour les artisans, artistes et acteurs du secteur culturel et associatif">
+    <title>Dakheur Klub - Studio web</title>
+
+    <!--**** FONTS ****-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+
+    <!--**** FAVICON ****-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/css/animate.min.css">
+    <link rel="stylesheet" href="PreLoadMe/css/styles.css">
+    <link rel="stylesheet" href="modern-slide-in/css/sequence-theme.modern-slide-in.css">
+    <link rel="stylesheet" href="dist/css/bundle-sass.css">
+</head>
+
+<body id="info-page" class="animated fadeIn">
+
+<!--**** PRELOADER ****-->
+<div id="preloader">
+    <div id="status"></div>
+</div>
+
+<!--**** CLOUDS ****-->
+<div id="clouds">
+
+    <div id="clouds-wrapper">
+
+        <img class="animated fadeInUp" style="width: 40%;" src="dist/img/cloud.png">
+        <img class="animated fadeInUp" style="width: 10%" src="dist/img/cloud.png">
+        <img class="animated fadeInUp" style="width: 25%; margin-left: 20%" src="dist/img/cloud.png">
+        <img class="animated fadeInUp" style="margin-left: 50%; width: 30%;" src="dist/img/cloud.png">
+
+    </div> <!-- END: clouds-wrapper -->
+
+</div> <!-- END: clouds -->
+
+<!--**** HEADER ****-->
+<header>
+
+    <nav id="main-nav" class="moove">
+        <ul>
+            <li data-tilt><a href="index.html"><img id="logo" src="dist/img/dakheur-klub-logo.png"> </a></li>
+            <li><a class="non-active" href="qui.html">qui nous sommes</a> </li>
+            <li><a class="active" href="quoi.html">ce que nous faisons</a> </li>
+            <li><a class="non-active" href="portfolio.html">portfolio</a> </li>
+            <li><a class="non-active" href="contact.html">contact</a> </li>
+        </ul>
+    </nav>
+
+</header>
+
+<!--**** MAIN CONTENT ****-->
+<main class="animated fadeInUp">
+
+    <section id="quoi">
+
+        <!--**** COEUR DE METIER ****-->
+        <h2>Notre coeur de métier</h2>
+
+        <div id="coeurdemetier">
+
+            <article>
+                <h3>Conception</h3>
+                <p>
+                Nous concevons votre site web sur mesure, en fonction de votre identité et de vos objectifs.<br>
+                "Style is the message".<br>
+                Chez Dakheur Klub, nous sommes en veille permanente et à l'affût des dernières tendances en matière de web design, et mettons tout en oeuvre pour sublimer votre message au travers d'une expérience intuitive et élégante, en adéquation avec votre identité</p>
+            </article>
+
+            <article>
+                <h3>Développement</h3>
+                <p>
+                    Une fois le design validé, nous passons à l'étape de développement de votre site,<br>
+                Nous utilisons les dernières technologies, et développons des sites responsives, afin de garantir la meilleure expérience utilisateur quel que soit le support.<br>
+                    Et comme votre visibilté sur le web est notre priorité, nous appliquons nos savoirs-faire en matière de référencement jusque dans notre code.
+                Et nous pouvons faire encore plus pour vous...
+                </p>
+            </article>
+
+        </div> <!-- END: coeur de métier -->
+
+
+
+        <!--**** + DE SERVICES ****-->
+        <h2>Plus de services</h2>
+        <p>Dakheur Klub s'appuie sur un réseau de graphistes, photographes, vidéastes, développeurs, professionnels de la communication, afin de vous proposer le service le plus complet possible, allant de la création d'un logotype et d'une charte graphique à l'élaboration d'une campagne de communication web et print, en plus de votre site web.</p>
+        <a href="contact.html"></a>
+
+        <!-- END: + de services -->
+
+    </section> <!-- END: quoi -->
+
+</main>
+
+
+
+<!--**** FOOTER ****-->
+<footer class="animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+
+    <div class="footer-col">
+        <p>Dakheur Klub / Studio Web - Lyon</p>
+    </div>
+
+    <div class="footer-col">
+        <ul>
+            <li><a href="mailto:hello@dakheurklub.fr"><i class="fa fa-envelope" aria-hidden="true"></i>
+            </a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+            </a> </li>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+            </a> </li>
+        </ul>
+    </div>
+
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="modern-slide-in/scripts/imagesloaded.pkgd.min.js"></script>
+<script src="modern-slide-in/scripts/hammer.min.js"></script>
+<script src="modern-slide-in/scripts/respond.min.js"></script>
+<script src="modern-slide-in/scripts/sequence.min.js"></script>
+<script src="modern-slide-in/scripts/sequence-theme.modern-slide-in.min.js"></script>
+<script src="tilt.js/src/tilt.jquery.js"></script>
+<script src="js/main.js"></script>
+
+<!--**** PRELOADER ****-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    });
+    //]]>
+</script>
+
+</body>
+</html>

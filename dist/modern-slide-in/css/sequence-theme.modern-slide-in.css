@@ -41,7 +41,7 @@ html,
   background-position: 0% 100%;
   background-size: cover;
   /* Dimensions */
-  height: 360px;
+  height: 100%;
   width: 100%;
   max-width: 1280px;
   /* Hide anything that goes beyond the boundaries of the Sequence container */
@@ -197,12 +197,12 @@ html,
   height: 81%;
   width: 100%;
   /* Don't allow the image to exceed its original height */
-  /*max-height: 568px;*/
+  max-height: 100px;
 }
 
 .seq .seq-model img {
   /* Don't allow the image to exceed its original height */
-  max-height: 568px;
+  max-height: 100px;
   display: block;
   height: 100%;
   width: auto;
@@ -240,7 +240,7 @@ html,
 
 .seq .seq-title h2 {
   padding: .2em 1%;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 20px;
   color: white;
   background: black;

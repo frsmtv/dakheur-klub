@@ -7,32 +7,33 @@ header {
     top: 0;
     width: 100%;
     z-index: 10000;
+    background: yellow;
     ul {
-      padding: 0 4%;
+      padding: 2% 4%;
       display: flex;
       justify-content: space-between;
       list-style: none;
+      font-family: $navFont;
       li {
         align-self: center;
         img {
           padding-top: 2%;
-          height: 75px;
+          height: 50px;
         }
         a.non-active {
-          color: #333;
+          text-transform: uppercase;
           letter-spacing: 1px;
-          font-size: 1.3rem;
-          font-style: italic;
+          font-size: .8rem;
           padding: 0 2px;
           &:hover {
             color: $secondColor;
           }
         }
         a.active {
+          text-transform: uppercase;
           color: $secondColor;
           letter-spacing: 1px;
-          font-size: 1.3rem;
-          font-style: italic;
+          font-size: .8rem;
           padding: 0 2px;
           &:hover {
           }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="DAKHEUR KLUB">
+    <meta name="description" content="Dakheur Klub est un studio web basé à Lyon, et destiné à offrir des sites web sur mesure pour les artisans, artistes et acteurs du secteur culturel et associatif">
+    <title>Dakheur Klub - Studio web</title>
+
+    <!--**** FONTS ****-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+
+    <!--**** FAVICON ****-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="PreLoadMe/css/styles.css">
+    <link rel="stylesheet" href="dist/css/bundle-sass.css">
+</head>
+
+<body id="index-page" class="animated fadeInDown">
+
+<!--**** PRELOADER ****-->
+<!--<div id="preloader">-->
+    <!--<div id="status"></div>-->
+<!--</div>-->
+
+<!--**** HEADER ****-->
+<header>
+
+    <nav id="main-nav">
+        <ul>
+            <li data-tilt><a  href="index2.html"><img id="logo" src="dist/img/dakheur-klub-logo_v3-italic.png"> </a></li>
+            <li><a class="non-active" href="qui.html">qui / quoi</a> </li>
+            <li><a class="non-active" href="portfolio.html">portfolio</a> </li>
+            <!--<li><a class="non-active" href="tarifs.html">tarifs</a> </li>-->
+            <li><a class="non-active" href="contact.html">contact</a> </li>
+        </ul>
+    </nav>
+
+</header>
+
+<!--**** MAIN CONTENT ****-->
+<main data-tilt>
+
+    <!--**** CLOUDS ****-->
+    <div id="clouds">
+
+        <div id="clouds-wrapper">
+
+            <img class="animated fadeInUp" style="width: 40%;" src="dist/img/cloud.png">
+            <img class="animated fadeInUp" style="width: 10%" src="dist/img/cloud.png">
+            <img class="animated fadeInUp" style="width: 25%; margin-left: 20%" src="dist/img/cloud.png">
+            <img class="animated fadeInUp" style="margin-left: 50%; width: 30%;" src="dist/img/cloud.png">
+
+        </div> <!-- END: clouds-wrapper -->
+
+    </div> <!-- END: clouds -->
+
+    <!--******** INTRO BUBBLE_Y ********-->
+    <div id="intro" class="animated fadeIn">
+
+        <div id="quotes">
+
+            <div class="quote">
+            <p class="text">
+                Bienvenue chez<br>
+                Dakheur Klub !
+            </p>
+            </div>
+
+            <div class="quote">
+            <p class="text">
+                Nous sommes un studio web lyonnais<br>
+                spécialisé dans les sites vitrines,<br>
+                dédié aux artistes, artisans et associations.</p>
+            </div>
+
+            <div class="quote">
+                <p class="text">
+                Nous concevons et réalisons votre site web, et vous accompagnons dans l'élaboration de votre identité et le développement de votre présence sur le web.</p>
+                <p class="text"></p>
+            </div>
+
+            <div class="quote">
+            <p class="text">
+                Vous vous lancez, et souhaitez que nous travaillions ensemble,
+                ou avez juste besoin de conseils ?</p>
+            <p class="text">Contactez-nous !</p>
+            </div>
+
+            <div class="quote">
+            <p class="text">
+            </p>
+            </div>
+
+        </div> <!-- End: quotes -->
+
+    </div> <!-- END: intro -->
+
+
+
+<!--**** FOOTER ****-->
+<foooter>
+
+</foooter>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.lettering.js"></script>
+<script src="tilt.js/src/tilt.jquery.js"></script>
+<script src="js/main.js"></script>
+
+<!--**** PRELOADER ****-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    });
+    //]]>
+</script>
+
+</body>
+</html>

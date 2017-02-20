@@ -1,0 +1,28 @@
+@import "mixins";
+
+#quoi {
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    margin-bottom: 4%;
+  }
+  #coeurdemetier {
+    display: flex;
+    justify-content: space-between;
+    article {
+      width: 45%;
+      h3 {
+        background: $secondColor;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 100;
+        padding: 2%;
+        margin: 0;
+      }
+    }
+  }
+}

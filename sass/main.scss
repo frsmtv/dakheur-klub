@@ -6,6 +6,8 @@
 @import "partials/portfolio";
 @import "partials/contact";
 @import "partials/clouds";
+@import "partials/intro";
+@import "partials/quoi";
 
 html, body {
   padding: 0;
@@ -14,9 +16,9 @@ html, body {
   font: $mainFont;
   color: $mainColor;
   font-size: 16px;
-  background: #E0EAFC; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  //background: #E0EAFC; /* fallback for old browsers */
+  //background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
+  //background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 ul {
@@ -38,14 +40,23 @@ a {
   }
 }
 
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: inherit;
+  letter-spacing: 4px;
+}
+
 
 main {
   section {
-    margin-top: 150px;
+    margin-top: 8%;
+    padding: 4% 8%;
 
     p {
-      font-size: 2rem;
-      font-style: italic;
+      font-size: 1.2rem;
       text-align: justify;
       line-height: 1.5;
       letter-spacing: 1px;
