@@ -26,13 +26,29 @@
     <div id="status"></div>
 </div>
 
+<!--**** CLOUDS ****-->
+<div style="opacity: .5;" id="clouds">
+
+    <div id="clouds-wrapper">
+
+        <img class="animated fadeInUp" style="width: 40%;" src="img/cloud.png">
+        <img class="animated fadeInUp" style="width: 10%" src="img/cloud.png">
+        <img class="animated fadeInUp" style="width: 25%; margin-left: 20%" src="img/cloud.png">
+        <img class="animated fadeInUp" style="margin-left: 50%; width: 30%;" src="img/cloud.png">
+
+    </div> <!-- END: clouds-wrapper -->
+
+</div> <!-- END: clouds -->
+
+
 <!--**** HEADER ****-->
 <header>
 
     <nav id="main-nav" class="contact-nav">
         <ul>
-            <li data-tilt><a  href="index.html"><img id="logo" src="img/dakheur-klub-logo_v3-italic.png"> </a></li>
-            <li><a class="non-active" href="info.html">qui / quoi</a> </li>
+            <li data-tilt><a href="index.html"><img id="logo" src="img/dakheur-klub-logo.png"> </a></li>
+            <li><a class="non-active" href="qui.html">qui nous sommes</a> </li>
+            <li><a class="non-active" href="quoi.html">ce que nous faisons</a> </li>
             <li><a class="non-active" href="portfolio.html">portfolio</a> </li>
             <li><a class="active" href="contact.html">contact</a> </li>
         </ul>
@@ -44,10 +60,13 @@
 <main>
 
     <!--**** CONTACT ****-->
-    <section id="contact" class="animated fadeInUp">
+    <section id="contact" class="animated fadeIn">
 
         <ul>
             <li><a href="mailto:hello@dakheurklub.fr">hello@dakheurklub.fr</a> </li>
+            <li><a id="formlink" class="typeform-share link" href="https://fsimitchiev.typeform.com/to/LiANYN" data-mode="2" target="_blank">formulaire de contact</a>
+                <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm_share',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+            </li>
             <li><a href="#" target="_blank">facebook</a> / <a href="#" target="_blank">twitter</a> </li>
             <li><i class="fa fa-heart" aria-hidden="true"></i></li>
         </ul>
@@ -57,7 +76,6 @@
 </main>
 
 <script src="js/jquery.min.js"></script>
-<script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
 <script src="tilt.js/src/tilt.jquery.js"></script>
 <script src="js/main.js"></script>
 

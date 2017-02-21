@@ -19,20 +19,35 @@
     <link rel="stylesheet" href="css/bundle-sass.css">
 </head>
 
-<body id="portfolio-page" class="animated fadeIn">
+<body id="info-page" class="animated fadeIn">
 
 <!--**** PRELOADER ****-->
 <div id="preloader">
     <div id="status"></div>
 </div>
 
+<!--**** CLOUDS ****-->
+<div style="opacity: .5;" id="clouds">
+
+    <div id="clouds-wrapper">
+
+        <a href="#"><img class="animated fadeInUp" style="width: 40%;" src="img/cloud.png"></a>
+        <a href="#"><img class="animated fadeInUp" style="width: 10%" src="img/cloud.png"></a>
+        <a href="#"><img class="animated fadeInUp" style="width: 25%; margin-left: 20%" src="img/cloud.png"></a>
+        <a href="#"><img class="animated fadeInUp" style="margin-left: 50%; width: 30%;" src="img/cloud.png"></a>
+
+    </div> <!-- END: clouds-wrapper -->
+
+</div> <!-- END: clouds -->
+
 <!--**** HEADER ****-->
 <header>
 
     <nav id="main-nav" class="moove">
         <ul>
-            <li data-tilt><a  href="index.html"><img id="logo" src="img/dakheur-klub-logo_v3-italic.png"> </a></li>
-            <li><a class="non-active" href="info.html">qui / quoi</a> </li>
+            <li data-tilt><a href="index.html"><a href="#"><img id="logo" src="img/dakheur-klub-logo.png"></a> </a></li>
+            <li><a class="non-active" href="qui.html">qui nous sommes</a> </li>
+            <li><a class="non-active" href="quoi.html">ce que nous faisons</a> </li>
             <li><a class="active" href="portfolio.html">portfolio</a> </li>
             <li><a class="non-active" href="contact.html">contact</a> </li>
         </ul>
@@ -41,31 +56,79 @@
 </header>
 
 <!--**** MAIN CONTENT ****-->
-<main>
+<main class="animated fadeIn">
 
-    <!--**** PORTFOLIO ****-->
     <section id="portfolio">
 
         <div class="row">
 
-            <article class="portfolio animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                <a href="#"><img src="img/screenshot-six-ring-circus.png"> </a>
+            <article class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <h3>François Simitchiev</h3>
+                <a href="#"><img src="img/screenshot-fsimitchiev.png"></a>
+                <ul>
+                    <li>Conception / développement site web</li>
+                    <li><a href="#" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                     voir le site</a> </li>
+                </ul>
             </article>
 
-            <article class="portfolio animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                <a href="#"><img src="img/screenshot-iray.png"> </a>
+            <article class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <h3>Iray</h3>
+                <a href="#"><img src="img/screenshot-iray.png"></a>
+                <ul>
+                    <li>Création logotype</li>
+                    <li>Création pochette disque</li>
+                    <li>Conception / développement site web</li>
+                    <li><a href="#" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        voir le site</a> </li>
+                </ul>
             </article>
 
         </div> <!-- END: row -->
 
         <div class="row">
 
-            <article class="portfolio animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                <a href="#"><img src="img/screenshot-woco.png"> </a>
+            <article class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <h3>Six-Ring Circus</h3>
+                <a href="#"><img src="img/screenshot-six-ring-circus.png"></a>
+                <ul>
+                    <li>Conception / développement site web</li>
+                    <li><a href="#" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        voir le site</a> </li>
+                </ul>
             </article>
 
-            <article class="portfolio animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                <a href="#"><img src="img/screenshot-kemptown.png"> </a>
+            <article class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <h3>Woco</h3>
+                <a href="#"><img src="img/screenshot-woco.png"></a>
+                <ul>
+                    <li>Réalisation d'une landing page provisoire</li>
+                    <li style="color: #d81b60">Site web en cours de réalisation</li>
+                </ul>
+            </article>
+
+        </div> <!-- END: row -->
+
+        <div class="row">
+
+            <article class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <h3>Kemptown Foodtruck</h3>
+                <a href="#"><img src="img/screenshot-kemptown.png"></a>
+                <ul>
+                    <li>Conception / développement site web</li>
+                    <li><a href="#" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        voir le site</a> </li>
+                </ul>
+            </article>
+
+            <article class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <h3>Institut Léon Mba</h3>
+                <a href="#"><img src="img/screenshot-leonmba.png"></a>
+                <ul>
+                    <li>Réalisation d'une landing page</li>
+                    <li><a href="#" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        voir le site</a> </li>
+                </ul>
             </article>
 
         </div> <!-- END: row -->
@@ -77,10 +140,10 @@
 
 
 <!--**** FOOTER ****-->
-<footer>
+<footer class="animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="100">
 
     <div class="footer-col">
-        <p>Dakheur Klub / Studio Web - Lyon</p>
+        <p>Dakheur Klub | Studio Web - Lyon</p>
     </div>
 
     <div class="footer-col">
@@ -97,8 +160,8 @@
 </footer>
 
 <script src="js/jquery.min.js"></script>
-<script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
 <script src="tilt.js/src/tilt.jquery.js"></script>
+<script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
 <script src="js/main.js"></script>
 
 <!--**** PRELOADER ****-->
