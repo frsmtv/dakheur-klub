@@ -43,46 +43,49 @@
 <!--**** MAIN CONTENT ****-->
 <main>
 
-    <!--**** CLOUDS ****-->
-    <!--<div id="clouds">-->
-
-        <!--<div id="clouds-wrapper">-->
-
-            <!--<img class="animated fadeInUp" style="width: 40%;" src="dist/img/cloud.png">-->
-            <!--<img class="animated fadeInUp" style="width: 10%" src="dist/img/cloud.png">-->
-            <!--<img class="animated fadeInUp" style="width: 25%; margin-left: 20%" src="dist/img/cloud.png">-->
-            <!--<img class="animated fadeInUp" style="margin-left: 50%; width: 30%;" src="dist/img/cloud.png">-->
-
-        <!--</div> &lt;!&ndash; END: clouds-wrapper &ndash;&gt;-->
-
-    <!--</div> &lt;!&ndash; END: clouds &ndash;&gt;-->
-
     <!--******** INTRO ********-->
-    <section id="intro">
+    <div id="intro">
 
                 <p>
                     <em>Italique</em> est un studio web basé à Lyon, spécialisé dans le web design et le développement frontend.
                 </p>
 
-    </section> <!-- END: intro -->
+    </div> <!-- END: intro -->
 
 </main>
 
+<!--**** FOOTER ****-->
+<footer>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="tilt.js/src/tilt.jquery.js"></script>
-    <script src="js/main.js"></script>
+    <!--<div class="footer-col">-->
+    <!--<p><b><em>Italique</em></b> | Studio Web - Lyon</p>-->
+    <!--</div>-->
 
-    <!--**** PRELOADER ****-->
-    <script type="text/javascript">
-        //<![CDATA[
-        $(window).on('load', function() { // makes sure the whole site is loaded
-            $('#status').fadeOut(); // will first fade out the loading animation
-            $('#preloader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website.
-            $('body').delay(350).css({'overflow':'visible'});
-        });
-        //]]>
-    </script>
+    <div class="footer-col">
+        <ul>
+            <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+            </a> </li>
+            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+            </a> </li>
+        </ul>
+    </div>
+
+</footer>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+<!--**** PRELOADER ****-->
+<!--<script type="text/javascript">-->
+    <!--//<![CDATA[-->
+    <!--$(window).on('load', function() { // makes sure the whole site is loaded-->
+        <!--$('#status').fadeOut(); // will first fade out the loading animation-->
+        <!--$('#preloader').delay(1000).fadeOut('slow'); // will fade out the white DIV that covers the website.-->
+        <!--$('body').delay(350).css({'overflow':'visible'});-->
+    <!--});-->
+    <!--//]]>-->
+<!--</script>-->
 
 </body>
 </html>

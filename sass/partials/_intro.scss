@@ -1,11 +1,12 @@
 @import "mixins";
 
 #intro {
-  position: fixed;
   width: 70%;
-  top: 50%;
+  position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  transform: translate(-50%, -50%); /* Yep! */
+  height: 59%;
   p {
     font-size: 3.5rem;
     text-align: left;
