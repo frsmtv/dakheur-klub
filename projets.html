@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="PreLoadMe/css/styles.css">
-    <link rel="stylesheet" href="modern-slide-in/css/sequence-theme.modern-slide-in.css">
+    <link rel="stylesheet" href="dist/css/jquery.accordion.css">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
@@ -45,76 +45,38 @@
 
     <section id="portfolio">
 
-        <div class="row">
+        <!--**** ACCORDION ****-->
+        <div data-accordion-group>
 
-            <article class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                <a href="#"><img src="dist/img/screenshot-fsimitchiev.png"></a>
-                <ul>
-                    <li><h3>François Simitchiev</h3></li>
-                    <li>Design & développement</li>
-                    <li><a href="#" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>
-                     voir le site</a> </li>
-                </ul>
-            </article>
+            <div class="accordion" data-accordion>
+                <div data-control>Woco</div>
+                <div data-content>
+                    <img src="dist/img/screenshot-woco.png">
+                </div>
+            </div>
 
-            <article class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                <a href="#"><img src="dist/img/screenshot-iray.png"></a>
-                <ul>
-                    <li><h3>Iray</h3></li>
-                    <li>Création logotype | Création pochette disque | Design & développement</li>
-                    <li><a href="#" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>
-                        voir le site</a> </li>
-                </ul>
-            </article>
+            <div class="accordion" data-accordion>
+                <div data-control>François Simitchiev</div>
+                <div data-content>
+                    <img src="dist/img/screenshot-fsimitchiev.png">
+                </div>
+            </div>
 
-        </div> <!-- END: row -->
+            <div class="accordion" data-accordion>
+                <div data-control>Six-Ring Circus</div>
+                <div data-content>
+                    <img src="dist/img/screenshot-six-ring-circus.png">
+                </div>
+            </div>
 
-        <div class="row">
+            <div class="accordion" data-accordion>
+                <div data-control>Iray</div>
+                <div data-content>
+                    <img src="dist/img/screenshot-iray.png">
+                </div>
+            </div>
 
-            <article class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                <a href="#"><img src="dist/img/screenshot-six-ring-circus.png"></a>
-                <ul>
-                    <li><h3>Six-Ring Circus</h3></li>
-                    <li>Design & développement</li>
-                    <li><a href="#" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>
-                        voir le site</a> </li>
-                </ul>
-            </article>
-
-            <article class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                <a href="#"><img src="dist/img/screenshot-woco.png"></a>
-                <ul>
-                    <li><h3>Woco</h3></li>
-                    <li>Réalisation d'une landing page provisoire</li>
-                    <li >Site web en cours de réalisation</li>
-                </ul>
-            </article>
-
-        </div> <!-- END: row -->
-
-        <div class="row">
-
-            <article class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                <a href="#"><img src="dist/img/screenshot-kemptown.png"></a>
-                <ul>
-                    <li><h3>Kemptown Foodtruck</h3></li>
-                    <li>Design & développement</li>
-                    <li><a href="#" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>
-                        voir le site</a> </li>
-                </ul>
-            </article>
-
-            <article class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-                <a href="#"><img src="dist/img/screenshot-leonmba.png"></a>
-                <ul>
-                    <li><h3>Institut Léon Mba</h3></li>
-                    <li>Réalisation d'une landing page</li>
-                    <li><a href="#" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>
-                        voir le site</a> </li>
-                </ul>
-            </article>
-
-        </div> <!-- END: row -->
+        </div> <!-- END: accordion -->
 
     </section> <!-- END: portfolio -->
 
@@ -145,6 +107,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="tilt.js/src/tilt.jquery.js"></script>
 <script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
+<script src="js/jquery.accordion.js"></script>
 <script src="js/main.js"></script>
 
 <!--**** PRELOADER ****-->

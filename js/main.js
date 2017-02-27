@@ -102,4 +102,9 @@ $(document).ready(function() {
         $(this).find('img').css('opacity', '1');
     });
 
+    // **** PROJECTS -> ACCORDION ****
+    $('.accordion').accordion({
+        "transitionSpeed": 400
+    });
+
 });

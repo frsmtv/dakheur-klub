@@ -13,8 +13,9 @@ header {
       font-size: 1rem;
     }
     a.top-left {
-      top: 60px;
+      top: 40px;
       left: 60px;
+
     }
     a.top-right {
       top: 60px;
@@ -24,12 +25,12 @@ header {
       transform: rotate(90deg);
     }
     a.bottom-right {
-      bottom: 60px;
+      bottom: 40px;
       right: 60px;
     }
     a.bottom-left {
       bottom: 60px;
-      left: 60px;
+      left: 40px;
       -ms-transform: rotate(-90deg); /* IE 9 */
       -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
       transform: rotate(-90deg);

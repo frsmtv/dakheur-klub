@@ -1,54 +1,68 @@
 @import "mixins";
 
 section#portfolio {
-  div.row {
-    display: flex;
-    article {
-      margin: 4%;
-      position: relative;
-      img {
-        width: 100%;
-        filter: grayscale(100%);
 
-        -webkit-box-shadow: 0 5px 20px 0 #333;
-        box-shadow: 0 5px 20px 0 #333;
+  //**** ACCORDION ****
+  /*!
+ * jQuery Accordion 0.0.1
+ * (c) 2014 Victor Fernandez <victor@vctrfrnndz.com>
+ * MIT Licensed.
+ */
 
-        -webkit-transition: all 400ms ease-in;
-        -moz-transition: all 400ms ease-in;
-        -ms-transition: all 400ms ease-in;
-        -o-transition: all 400ms ease-in;
-        transition: all 400ms ease-in;
+  /* Requirements */
 
-        &:hover {
-          filter: none;
-          opacity: .5;
-        }
-      }
-      ul {
-        display: none;
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 2%;
-        letter-spacing: 2px;
-        color: #333;
-        h3 {
-          text-transform: uppercase;
-          font-style: italic;
-          font-size: 2rem;
-          //letter-spacing: 2px;
-          font-weight: bold;
-          margin: 0;
-          margin-bottom: 20px;
-          line-height: 1;
-          color: $mainColor;
-        }
-        li {
-          padding: 2%;
-        }
-      }
+  [data-accordion] [data-content] {
+    overflow: hidden;
+    max-height: 0;
+    img {
+      width: 100%;
     }
+  }
+
+  /* Basic Theme */
+
+  [data-accordion] {
+    /*line-height: 1;*/
+  }
+
+  [data-control] {
+    -webkit-transition: all 600ms ease-in-out;
+    -moz-transition: all 600ms ease-in-out;
+    -ms-transition: all 600ms ease-in-out;
+    -o-transition: all 600ms ease-in-out;
+    transition: all 600ms ease-in-out;
+
+    padding: 0;
+    font-size: 2rem;
+    line-height: 2;
+    letter-spacing: 2px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  [data-content] [data-accordion] {
+    border: 0;
+    padding: 0;
+  }
+
+  [data-accordion] [data-control] {
+    position: relative;
+    padding-right: 40px;
+  }
+
+  [data-accordion] > [data-control]:after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    height: 15px;
+    width: 24px;
+  }
+
+  [data-accordion].open > [data-control]:after {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
   }
 }

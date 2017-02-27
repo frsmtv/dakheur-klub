@@ -55,9 +55,17 @@ main {
     width: 70%;
     p {
       font-size: 2rem;
-      text-align: justify;
+      text-align: left;
       line-height: 1.5;
       letter-spacing: 1px;
+      webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+      &:nth-child(2) {
+        font-size: 1.7rem;
+        text-align: justify;
+      }
     }
   }
 }
