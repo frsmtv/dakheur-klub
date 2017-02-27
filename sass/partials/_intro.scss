@@ -7,12 +7,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   p {
-    font-size: 60px;
+    font-size: 3.5rem;
     text-align: left;
     line-height: 1.5!important;
     webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
+    i {
+      font-size: 1rem;
+      vertical-align: super;
+    }
   }
 }

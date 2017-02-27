@@ -29,7 +29,7 @@ header {
       right: 60px;
     }
     a.bottom-left {
-      bottom: 60px;
+      bottom: 80px;
       left: 40px;
       -ms-transform: rotate(-90deg); /* IE 9 */
       -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
@@ -43,7 +43,8 @@ header {
     }
     a.active {
       text-transform: uppercase;
-      letter-spacing: 20px;
+      font-style: italic;
+      letter-spacing: 2px;
       &:hover {
       }
     }
