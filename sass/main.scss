@@ -3,7 +3,7 @@
 @import "partials/quotes";
 @import "partials/info";
 @import "partials/footer";
-@import "partials/portfolio";
+@import "partials/projets";
 @import "partials/contact";
 @import "partials/clouds";
 @import "partials/intro";
@@ -16,9 +16,6 @@ html, body {
   font: $mainFont;
   color: $mainColor;
   font-size: 16px;
-  //background: #E0EAFC; /* fallback for old browsers */
-  //background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
-  //background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 ul {
@@ -36,7 +33,6 @@ a {
   -o-transition: all 400ms ease-in;
   transition: all 400ms ease-in;
   &:hover {
-    color: $secondColor;
   }
 }
 
@@ -52,11 +48,13 @@ h1 {
 
 main {
   section {
-    margin-top: 8%;
-    padding: 4% 8%;
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    padding: 4% 60px;
+    width: 70%;
     p {
-      font-size: 1.2rem;
+      font-size: 2rem;
       text-align: justify;
       line-height: 1.5;
       letter-spacing: 1px;

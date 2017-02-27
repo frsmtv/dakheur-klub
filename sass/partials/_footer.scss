@@ -1,11 +1,12 @@
 @import "mixins";
 
 footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
   display: flex;
   justify-content: space-between;
-  align-self: center;
   font-size: .8rem;
-  color: $secondColor;
   text-align: center;
   letter-spacing: 2px;
   padding: 2% 8%;

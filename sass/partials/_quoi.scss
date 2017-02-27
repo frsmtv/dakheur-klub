@@ -17,7 +17,6 @@
       width: 45%;
       h3 {
         font-family: $navFont;
-        background: $secondColor;
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -38,7 +37,6 @@
     letter-spacing: 4px;
     line-height: 1.5;
     color: #fff;
-    background: $secondColor;
     &:hover {
       opacity: .6;
     }
