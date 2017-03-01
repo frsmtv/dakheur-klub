@@ -11,6 +11,8 @@ header {
     a {
       position: fixed;
       font-size: 1rem;
+      padding: 0 0 10px;
+
     }
     a.top-left {
       top: 40px;
@@ -34,19 +36,6 @@ header {
       -ms-transform: rotate(-90deg); /* IE 9 */
       -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
       transform: rotate(-90deg);
-    }
-    a.non-active {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      &:hover {
-      }
-    }
-    a.active {
-      text-transform: uppercase;
-      font-style: italic;
-      letter-spacing: 2px;
-      &:hover {
-      }
     }
   }
 }

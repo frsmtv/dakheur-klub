@@ -32,8 +32,41 @@ a {
   -ms-transition: all 400ms ease-in;
   -o-transition: all 400ms ease-in;
   transition: all 400ms ease-in;
+}
+
+a.non-active {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: $mainColor;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  &:hover::after {
+    height: 2px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+}
+
+a.active {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid $mainColor;
   &:hover {
-    font-style: italic;
   }
 }
 
@@ -64,8 +97,8 @@ main {
       -ms-hyphens: auto;
       hyphens: auto;
       &:nth-child(2) {
-        font-size: 1.7rem;
-        text-align: justify;
+        //font-size: 1.7rem;
+        //text-align: justify;
       }
     }
   }
