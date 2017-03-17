@@ -76,22 +76,6 @@ $(document).ready(function() {
         switchTo(next);
     }, opts.dwellTime );
 
-    // **** NAV FADEOUT ON SCROLL ****
-    // var scroll_start = 0;
-    // var startchange = $('body');
-    // var offset = startchange.offset();
-    // $(document).scroll(function() {
-    //     scroll_start = $(this).scrollTop();
-    //     if (scroll_start > offset.top) {
-    //         $('nav.moove').addClass('animated fadeOutUp')
-    //     } else {
-    //         $('nav.moove').removeClass('fadeOutUp').addClass('fadeInDown')
-    //     }
-    // });
-
-    // **** SCROLLA ****
-    $('.animate').scrolla();
-
     // **** ARTICLE CAPTION SHOW ON MOUSEOVER ****
     $('article').hover(function() {
         $(this).find('ul').fadeIn("slow");

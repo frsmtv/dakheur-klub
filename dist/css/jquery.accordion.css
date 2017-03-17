@@ -19,8 +19,19 @@
 
 [data-control],
 [data-content] > * {
-    border-bottom: 1px solid #888;
+    /*border-bottom: 1px solid #888;*/
     padding: 10px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid rgba(0, 1, 156, 0);
+    -webkit-transition: all 400ms ease-in;
+  -moz-transition: all 400ms ease-in;
+  -ms-transition: all 400ms ease-in;
+  -o-transition: all 400ms ease-in;
+  transition: all 400ms ease-in;
+}
+
+[data-control]:hover {
+  border-bottom: 2px solid rgba(0, 1, 156, 1);
 }
 
 [data-content] [data-accordion] {
@@ -48,7 +59,7 @@
 }
 
 [data-accordion].open > [data-control]:after {
-    -webkit-transform: rotate(-180deg); 
-    -ms-transform: rotate(-180deg); 
-    transform: rotate(-180deg); 
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
 }

@@ -1,14 +1,19 @@
 @import "mixins";
 
 #info {
-  a {
-    padding: 1%;
-    text-transform: uppercase;
-    font-size: 60%;
-    letter-spacing: 4px;
-    color: #fff;
-    &:hover {
-      opacity: .6;
+  .img-wrapper {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    img {
+      height: 50px
+    }
+  }
+  .img-wrapper:last-child {
+    justify-content: space-around;
+    img {
+      height: 40px
     }
   }
 }
