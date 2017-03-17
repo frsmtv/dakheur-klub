@@ -30,6 +30,10 @@
   transition: all 400ms ease-in;
 }
 
+[data-control] {
+  font-size: 4vw!important
+}
+
 [data-control]:hover {
   border-bottom: 2px solid rgba(0, 1, 156, 1);
 }
