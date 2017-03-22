@@ -1,11 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Vollkorn|Roboto);
 .toggle-button {
     position: fixed;
-    top: 0px;
-    right: 30px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
     border: 1px solid #00019C;
     padding: 2%;
+    margin-top: 0!important;
     z-index: 2001;
 }
 
@@ -71,6 +72,7 @@
     font-size: 2rem;
     text-align: left;
     list-style: none;
+    letter-spacing: 2px;
     line-height: 2;
     padding: 0;
 }
