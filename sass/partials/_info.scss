@@ -1,19 +1,26 @@
 @import "mixins";
 
 #info {
+  p {
+    span {
+    }
+  }
   .img-wrapper {
     margin-top: 60px;
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+    flex-direction: column;
+    display: none;
+    }
     img {
-      height: 50px
+      height: 30px;
     }
   }
   .img-wrapper:last-child {
     justify-content: space-around;
     img {
-      height: 40px
     }
   }
 }

@@ -8,11 +8,13 @@ header {
     width: 100%;
     z-index: 10000;
     font-family: $navFont;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+    display: none;
+    }
     a {
       position: fixed;
       font-size: 1rem;
       padding: 0 0 10px;
-
     }
     a.top-left {
       top: 40px;
@@ -36,6 +38,27 @@ header {
       -ms-transform: rotate(-90deg); /* IE 9 */
       -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
       transform: rotate(-90deg);
+    }
+  }
+  #mobile-nav {
+    display: none;
+    padding: 5%;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+    display: block;
+    }
+    h1 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 70%;
+    }
+    span {
+      margin-top: 5vh;
+      font-family: $navFont;
+      font-size: 1.5rem;
+      font-weight: 100;
+      line-height: .8;
+      text-transform: uppercase;
     }
   }
 }

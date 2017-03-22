@@ -7,6 +7,8 @@
 @import "partials/intro";
 
 html, body {
+  width: 100vw;
+  height: 100vh;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -70,10 +72,15 @@ a.active {
 h1 {
   text-transform: uppercase;
   text-align: center;
-  font-size: 2rem;
-  font-style: italic;
+  font-size: 1rem;
+  font-family: $navFont;
   font-weight: inherit;
   letter-spacing: 4px;
+  color: #fff;
+  background: $mainColor;
+  padding: 2%;
+  margin: 0 0 40px 0;
+
 }
 
 
@@ -84,6 +91,10 @@ main {
     margin-top: 60px;
     padding: 4% 60px;
     width: 70%;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+    width: 100%;
+    padding: 0;
+    }
     p {
       font-size: 2rem;
       text-align: left;
@@ -93,6 +104,12 @@ main {
       -moz-hyphens: auto;
       -ms-hyphens: auto;
       hyphens: auto;
+      @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+      font-size: 1rem;
+      text-align: justify;
+      padding: 0 5% 5%;
+      margin: 0;
+      }
       &:nth-child(2) {
         //font-size: 1.7rem;
         //text-align: justify;

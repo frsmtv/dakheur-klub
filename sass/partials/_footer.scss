@@ -1,7 +1,6 @@
 @import "mixins";
 
 footer {
-  //display: none!important;
   position: fixed;
   top: 44%;
   right: -20px;
@@ -12,6 +11,9 @@ footer {
   justify-content: space-between;
   font-size: 1.2rem;
   letter-spacing: 2px;
+  @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+    display: none;
+  }
   a:hover {
   }
   p {

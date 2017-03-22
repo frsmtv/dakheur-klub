@@ -12,12 +12,15 @@ section#portfolio {
 
   /* Requirements */
 
+  [data-accordion-group] {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+    display: none;
+    }
+  }
+
   [data-accordion] [data-content] {
     overflow: hidden;
     max-height: 0;
-    img {
-      width: 100%;
-    }
   }
 
   /* Basic Theme */
@@ -39,6 +42,34 @@ section#portfolio {
     letter-spacing: 2px;
     &:hover {
       cursor: pointer;
+    }
+  }
+
+  [data-content] {
+    display: flex;
+    justify-content: space-between;
+    max-height: 70vh;
+    img {
+      width: 50vw;
+      height: 100%;
+      padding: 0;
+    }
+    p {
+      font-size: 1.2rem;
+      padding: 0;
+      margin-left: 20px
+    }
+    a {
+      max-height: .8rem;
+      padding: 1%;
+      font-size: .8rem;
+      font-style: normal;
+      letter-spacing: 4px;
+      color: #fff;
+      background: $mainColor;
+      &:hover {
+        opacity: .5
+        }
     }
   }
 
@@ -66,4 +97,21 @@ section#portfolio {
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
   }
+
+  #mobile-portfolio {
+    display: none;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+    display: block;
+    margin-top: 5vh;
+    }
+    ul {
+      padding: 0 5%;
+      li {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
 }
