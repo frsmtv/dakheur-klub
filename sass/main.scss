@@ -36,6 +36,7 @@ a {
 a.non-active {
   text-transform: uppercase;
   letter-spacing: 2px;
+  opacity: .5;
   &::after {
     position: absolute;
     top: 100%;
@@ -52,6 +53,10 @@ a.non-active {
     -moz-transform: translateY(-10px);
     transform: translateY(-10px);
   }
+  &:hover {
+    opacity: 1;
+  }
+
   &:hover::after {
     height: 2px;
     opacity: 1;
