@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="PreLoadMe/css/styles.css">
     <link rel="stylesheet" href="dist/css/overlay.css">
+    <link rel="stylesheet" href="dist/css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
@@ -61,53 +62,58 @@
 <!--**** MAIN CONTENT ****-->
 <main>
 
-    <section id="info">
+    <div id="fullpage">
 
-      <p>
-          <em>Glyptique</em> conçoit et façonne des sites web <span>sur mesure</span>, soulignant l'identité et le message de ses clients au travers d'<span>expériences intuitives et élégantes</span>, <span>adaptées</span> à tous les supports numériques. <br>
-          <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
-      </p>
+        <section id="info">
 
-      <p>
-        <i class="fa fa-long-arrow-up" aria-hidden="true"></i> <br>
-        <em>Glyptique</em> s'attache à créer le lien le plus direct possible entre le visiteur et le message, à l'aide d'un <span>design ergonomique et minimaliste</span>, portant un soin particulier à la <span>typographie</span>.<br>
-        <i class="fa fa-long-arrow-down" aria-hidden="true"></i>
-      </p>
+            <div class="section" data-anchor="firstPage">
+                <p>
+                    <em>Glyptique</em> conçoit et façonne des sites web <span>sur mesure</span>, soulignant l'identité et le message de ses clients au travers d'<span>expériences intuitives et élégantes</span>, <span>adaptées</span> à tous les supports numériques. <br>
+                </p>
 
-      <p>
-          <i class="fa fa-long-arrow-up" aria-hidden="true"></i> <br>
-          <em>Glyptique</em> allie le design aux dernières technologies, avec pour maîtres-mots: <span>soucis du détail</span> et <span>éloquence</span>.
-      </p>
+                <a href="#secondPage"> <i class="fa fa-long-arrow-down" aria-hidden="true"></i></a>
 
-        <div class="img-wrapper animated fadeInUp">
+            </div>
 
-            <img src="dist/img/html-css.png" alt="html css logo">
-            <img src="dist/img/sass.png" alt="sass logo">
-            <img src="dist/img/js.png" alt="javascript logo">
-            <img src="dist/img/jquery.jpg" alt="jQuey logo">
-            <img src="dist/img/php.png" alt="php logo">
-            <img src="dist/img/laravel.png" alt="laravel logo">
-            <img src="dist/img/wp.jpg" alt="wordpress logo">
-            <img src="dist/img/git.png" alt="git logo">
-            <img src="dist/img/gulp.png" alt="gulp logo">
+            <div class="section" data-anchor="secondPage">
 
-        </div> <!-- End: img-wrapper -->
+                <a href="#firstPage"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
 
-        <div class="img-wrapper animated fadeInUp">
+                <p>
+                  <em>Glyptique</em> s'attache à créer le lien le plus direct possible entre le visiteur et le message, à l'aide d'un <span>design ergonomique et minimaliste</span>, portant un soin particulier à la <span>typographie</span>.<br>
+                </p>
 
-            <!-- <img src="dist/img/php.png" alt="php logo">
-            <img src="dist/img/laravel.png" alt="laravel logo"> -->
+                <a href="#thirdPage"><i class="fa fa-long-arrow-down" aria-hidden="true"></i></a>
 
-        </div> <!-- End: img-wrapper -->
+            </div>
 
-        <div class="img-wrapper animated fadeInUp">
+            <div class="section" data-anchor="thirdPage">
 
-            <!-- <img src="dist/img/git.png" alt="git logo">
-            <img src="dist/img/gulp.png" alt="gulp logo"> -->
+                <a href="#secondPage"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
 
-        </div> <!-- End: img-wrapper -->
+                <p>
+                    <em>Glyptique</em> allie le design aux dernières technologies, avec pour maîtres-mots: <span>soucis du détail</span> et <span>éloquence</span>.
+                </p>
 
-    </section> <!-- END: info -->
+                  <div class="img-wrapper">
+
+                      <img src="dist/img/html-css.png" alt="html css logo">
+                      <img src="dist/img/sass.png" alt="sass logo">
+                      <img src="dist/img/js.png" alt="javascript logo">
+                      <img src="dist/img/jquery.jpg" alt="jQuey logo">
+                      <img src="dist/img/php.png" alt="php logo">
+                      <img src="dist/img/laravel.png" alt="laravel logo">
+                      <img src="dist/img/wp.jpg" alt="wordpress logo">
+                      <img src="dist/img/git.png" alt="git logo">
+                      <img src="dist/img/gulp.png" alt="gulp logo">
+
+                  </div> <!-- End: img-wrapper -->
+
+            </div>
+
+        </section> <!-- END: info -->
+
+    </div> <!-- End: fulscreen -->
 
 </main>
 
@@ -127,7 +133,16 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/overlay.js"></script>
+<script src="js/jquery.fullpage.min.js"></script>
 <script src="js/main.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+      anchors:['firstPage', 'secondPage', 'thirdPage']
+    });
+});
+</script>
 
 </body>
 </html>

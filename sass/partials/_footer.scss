@@ -1,6 +1,7 @@
 @import "mixins";
 
 footer {
+  display: none!important;
   position: fixed;
   top: 44%;
   right: -20px;

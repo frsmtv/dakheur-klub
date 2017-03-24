@@ -52,7 +52,8 @@ section#portfolio {
     img {
       width: 50vw;
       height: 100%;
-      padding: 0;
+      padding: 20px;
+      border: 1px solid $mainColor;
     }
     p {
       font-size: 1.2rem;
@@ -102,7 +103,7 @@ section#portfolio {
     display: none;
     @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
     display: block;
-    margin-top: 5vh;
+    margin-top: 60px;
     }
     ul {
       padding: 0 5%;
