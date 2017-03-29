@@ -8,9 +8,11 @@
     width: 90%;
     margin: 5% 0;
     }
-    span {
+    span:first-child {
+      text-transform: uppercase;
     }
   }
+  // Arrows
   img {
     display: block;
     margin: 0 auto;
