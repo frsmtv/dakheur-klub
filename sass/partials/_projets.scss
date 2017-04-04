@@ -1,7 +1,11 @@
 @import "mixins";
 
 section#portfolio {
-  position: relative;
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Yep! */
 
   //**** ACCORDION ****
   /*!
@@ -37,7 +41,7 @@ section#portfolio {
     transition: all 600ms ease-in-out;
 
     padding: 0;
-    font-size: 2rem;
+    font-size: 3rem!important;
     line-height: 2;
     letter-spacing: 2px;
     &:hover {
@@ -71,7 +75,7 @@ section#portfolio {
       &:hover {
         opacity: .5
         }
-    }
+      }
   }
 
   [data-content] [data-accordion] {
@@ -114,5 +118,4 @@ section#portfolio {
       }
     }
   }
-
 }

@@ -2,4 +2,34 @@ $mainColor: #00019C;
 $navFont: 'PT Mono', monospace;
 $mainFont: 'Oswald', sans-serif;
 
+.flash {
+  border-right: 1px solid $mainColor;
+  margin-right: 2%;
+  padding-left: 2%;
+  -moz-animation: flash 1s ease-out;
+  -moz-animation-iteration-count: infinite;
 
+  -webkit-animation: flash 1s ease-out;
+  -webkit-animation-iteration-count: infinite;
+
+  -ms-animation: flash 1s ease-out;
+  -ms-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes flash {
+    0% { background-color: none; }
+    50% { background-color: #fbf8b2; }
+    100% { background-color: none; }
+}
+
+@-moz-keyframes flash {
+    0% { background-color: none; }
+    50% { background-color: #fbf8b2; }
+    100% { background-color: none; }
+}
+
+@-ms-keyframes flash {
+    0% { background-color: none; }
+    50% { background-color: #fbf8b2; }
+    100% { background-color: none; }
+}

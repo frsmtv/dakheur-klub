@@ -2,14 +2,21 @@
 
 #info {
   p {
+    position: relative;
     text-align: justify;
     margin: 10% 0;
+    padding: 5% 9% 15% 4%;
+    // border-right: 10px solid $mainColor;
+    // border-bottom: 5px solid $mainColor;
     @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
     width: 90%;
     margin: 5% 0;
     }
     span:first-child {
-      text-transform: uppercase;
+      font-size: 200%;
+      position: absolute;
+      top: -80px;
+      left: -50px;
     }
   }
   // Arrows
@@ -26,6 +33,15 @@
     -ms-transition: all 200ms ease-in;
     -o-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
+    &.down {
+      position: absolute;
+      left: 50%;
+    }
+    &.up {
+      position: absolute;
+      margin-top: -200px;
+      left: 50%;
+    }
     &.down:hover {
       -moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);
 -webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="[a&f]">
-    <meta name="description" content="[a&f] est un studio web basé à Lyon, spécialisé dans le web design et le développement frontend">
-    <title>[a&f] - Studio web | Lyon</title>
+    <meta name="author" content="typed in">
+    <meta name="description" content="typed in est un studio web basé à Lyon, spécialisé dans le web design et le développement frontend">
+    <title>typed in - Studio web | Lyon</title>
 
     <!--**** FONTS ****-->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="PreLoadMe/css/styles.css">
     <link rel="stylesheet" href="dist/css/overlay.css">
+    <link rel="stylesheet" href="dist/css/ap-fullscreen-modal.css">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
@@ -26,7 +27,7 @@
 <header>
 
     <nav id="main-nav">
-        <span><a class="non-active bottom-left" href="index.html">[a&f]</a> </span>
+        <span><a class="non-active bottom-left" href="index.html">typed in</a> </span>
         <span><a class="non-active top-left" href="projets.html">projets</a> </span>
         <span><a class="non-active top-right"  href="info.html">info</a> </span>
         <span><a class="active bottom-right" href="contact.html">contact</a> </span>
@@ -34,7 +35,7 @@
 
     <!-- **** MOBILE NAV **** -->
         <div id="mobile-nav">
-            <h1><a href="index.html">[a&f]</a></h1>
+            <h1><a href="index.html">typed in</a></h1>
 
             <div class="navbar-header">
                 <span id="toggle" class="toggle-button">me<br>
@@ -63,19 +64,44 @@
     <section id="contact" class="animated fadeIn">
 
         <ul>
-            <li><a href="mailto:hello@dakheurklub.fr">hello@[a&f]web.fr</a> </li>
+            <li><a href="mailto:hello@dakheurklub.fr">hello@typedin.studio</a> <span class="flash"></span> </li>
             <li><a href="" id="formlink">demander un devis en ligne</a></li>
             <li><a href="#" target="_blank">facebook</a> / <a href="#" target="_blank">twitter</a> </li>
-            <li><i class="fa fa-heart" aria-hidden="true"></i></li>
         </ul>
 
     </section> <!-- END: contact -->
+
+    <!-- **** MODAL > CONTACT FORM **** -->
+    <div style="display: none;">
+
+        <div id="modal-content-1" class="modal-content">
+            <div class="wrapper">
+
+                <!-- Change the width and height values to suit you best -->
+<iframe id=iframe src=https://https://frsmtv.tellform.com/#!/forms/58d5706a8472a3aa5a5009d9 style=width:100%;height:500px></iframe>
+<div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px">Powered by<a href=https://www.tellform.com style="color: #999" target=_blank>TellForm</a></div>
+
+            </div>
+        </div>
+
+    </div>
 
 </main>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/overlay.js"></script>
+<script src="js/ap-fullscreen-modal.min.js"></script>
 <script src="js/main.js"></script>
+
+<!-- **** MODAL **** -->
+<script type="text/javascript">
+			$(document).ready(function() {
+				$('#modal-content-1').apFullscreenModal({
+					openSelector: '#formlink',
+					closeSelector: '.close-modal, #send-1'
+				});
+			});
+		</script>
 
 </body>
 </html>
