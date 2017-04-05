@@ -6,8 +6,6 @@
     text-align: justify;
     margin: 10% 0;
     padding: 5% 9% 15% 4%;
-    // border-right: 10px solid $mainColor;
-    // border-bottom: 5px solid $mainColor;
     @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
     width: 90%;
     margin: 5% 0;
@@ -23,7 +21,6 @@
   img {
     display: block;
     margin: 0 auto;
-    fill: $mainColor;
     height: 40px;
     @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
       height: 20px;
@@ -36,11 +33,12 @@
     &.down {
       position: absolute;
       left: 50%;
+      bottom: 20vh;
     }
     &.up {
       position: absolute;
-      margin-top: -200px;
       left: 50%;
+      top: 0;
     }
     &.down:hover {
       -moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(10px) skewX(0deg) skewY(0deg);

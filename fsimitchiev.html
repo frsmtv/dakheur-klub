@@ -21,14 +21,14 @@
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
-<body id="index-page" class="animated fadeIn">
+<body class="animated fadeIn">
 
 <!--**** HEADER ****-->
 <header>
 
     <!-- **** MAIN NAV **** -->
     <nav id="main-nav">
-            <span><a class="active bottom-left" href="index.html">typed in</a> </span>
+            <span><a class="non-active bottom-left" href="index.html">typed in</a> </span>
             <span><a class="non-active top-left" href="projets.html">projets</a> </span>
             <span><a class="non-active top-right"  href="info.html">info</a> </span>
             <span><a class="non-active bottom-right" href="contact.html">contact</a> </span>
@@ -43,7 +43,6 @@
                 nu</span>
             </div>
 
-
             <nav id="overlay" class="overlay animated fadeIn">
 
                 <ul>
@@ -57,19 +56,40 @@
 
         </div> <!-- End: mobile-nav -->
 
+    <!-- **** PROJECTS NAV **** -->
+    <nav id="projects-nav">
+
+        <ul>
+            <li class="prev animated fadeInLeft"><a href="iray.html"><img src="dist/img/prev.png" alt=""></a></li>
+            <li class="next animated fadeInRight"><a href="kemptown.html"><img src="dist/img/next.png" alt=""></a></li>
+        </ul>
+
+    </nav> <!-- End: projects-nav -->
+
 </header>
 
 <!--**** MAIN CONTENT ****-->
 <main>
 
-    <!--******** INTRO ********-->
-    <div id="intro">
+    <!--******** SINGLE PROJECT SECTION ********-->
+    <section class="single-project">
 
-        <p>
-            Typed in <span class="flash"></span> studio web <span>Lyon</span>
-        </p>
+        <!-- **** SINGLE PROJECT HEADING **** -->
+        <div class="single-project-heading animated fadeInDown">
 
-    </div> <!-- END: intro -->
+            <h2>francois simitchiev</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+        </div> <!-- End: single-project-heading -->
+
+        <!-- **** SINGLE PROJECT CONTENT **** -->
+
+        <img class="animated fadeInUp" src="dist/img/screenshot-fsimitchiev.png" alt="">
+
+    </section>
 
 </main>
 
@@ -86,7 +106,6 @@
     </div>
 
 </footer>
-
 
 <script src="js/jquery.min.js"></script>
 <script src="js/overlay.js"></script>

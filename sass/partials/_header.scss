@@ -24,9 +24,6 @@ header {
     a.top-right {
       top: 60px;
       right: 60px;
-      // -ms-transform: rotate(90deg); /* IE 9 */
-      // -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-      // transform: rotate(90deg);
     }
     a.bottom-right {
       bottom: 40px;
@@ -58,6 +55,42 @@ header {
       font-weight: 100;
       line-height: .8;
       text-transform: uppercase;
+    }
+  }
+  nav#projects-nav {
+    ul {
+      img {
+        width: 50px;
+        -webkit-transition: all 200ms ease-in;
+        -moz-transition: all 200ms ease-in;
+        -ms-transition: all 200ms ease-in;
+        -o-transition: all 200ms ease-in;
+        transition: all 200ms ease-in;
+      }
+      li.prev {
+        position: fixed;
+        left: 5%;
+        top: 50%;
+        img:hover {
+          -moz-transform: scale(1) rotate(0deg) translateX(-10px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1) rotate(0deg) translateX(-10px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(0deg) translateX(-10px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(0deg) translateX(-10px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(0deg) translateX(-10px) translateY(0px) skewX(0deg) skewY(0deg);
+        }
+      }
+      li.next {
+        position: fixed;
+        right: 5%;
+        top: 50%;
+        img:hover {
+          -moz-transform: scale(1) rotate(0deg) translateX(10px) translateY(0px) skewX(0deg) skewY(0deg);
+    -webkit-transform: scale(1) rotate(0deg) translateX(10px) translateY(0px) skewX(0deg) skewY(0deg);
+    -o-transform: scale(1) rotate(0deg) translateX(10px) translateY(0px) skewX(0deg) skewY(0deg);
+    -ms-transform: scale(1) rotate(0deg) translateX(10px) translateY(0px) skewX(0deg) skewY(0deg);
+    transform: scale(1) rotate(0deg) translateX(10px) translateY(0px) skewX(0deg) skewY(0deg);
+        }
+      }
     }
   }
 }
