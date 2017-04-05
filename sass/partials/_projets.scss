@@ -50,9 +50,10 @@ section#portfolio {
   }
 
   [data-content] {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     max-height: 70vh;
+    position: relative;
     img {
       width: 50vw;
       height: 100%;
@@ -65,6 +66,7 @@ section#portfolio {
       margin-left: 20px
     }
     a {
+      position: absolute;
       max-height: .8rem;
       padding: 1%;
       font-size: .8rem;
