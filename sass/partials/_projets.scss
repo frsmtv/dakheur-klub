@@ -1,117 +1,6 @@
 @import "mixins";
 
 section#portfolio {
-  width: 70%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); /* Yep! */
-
-  //**** ACCORDION ****
-  /*!
- * jQuery Accordion 0.0.1
- * (c) 2014 Victor Fernandez <victor@vctrfrnndz.com>
- * MIT Licensed.
- */
-
-  /* Requirements */
-
-  [data-accordion-group] {
-    @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
-    display: none;
-    }
-  }
-
-  [data-accordion] [data-content] {
-    overflow: hidden;
-    max-height: 0;
-  }
-
-  /* Basic Theme */
-
-  [data-accordion] {
-    /*line-height: 1;*/
-  }
-
-  [data-control] {
-    -webkit-transition: all 600ms ease-in-out;
-    -moz-transition: all 600ms ease-in-out;
-    -ms-transition: all 600ms ease-in-out;
-    -o-transition: all 600ms ease-in-out;
-    transition: all 600ms ease-in-out;
-
-    padding: 0;
-    font-size: 3rem!important;
-    line-height: 2;
-    letter-spacing: 2px;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  [data-content] {
-    // display: flex;
-    // justify-content: space-between;
-    max-height: 70vh;
-    position: relative;
-    img {
-      width: 50vw;
-      height: 100%;
-      padding: 20px;
-      border: 1px solid $mainColor;
-    }
-    p {
-      font-size: 1.2rem;
-      padding: 0;
-      margin-left: 20px
-    }
-    a {
-      position: absolute;
-      max-height: .8rem;
-      padding: 1%;
-      font-size: .8rem;
-      font-style: normal;
-      letter-spacing: 4px;
-      color: #fff;
-      background: $mainColor;
-      &:hover {
-        opacity: .5
-        }
-      }
-  }
-
-  [data-content] [data-accordion] {
-    border: 0;
-    padding: 0;
-  }
-
-  [data-accordion] [data-control] {
-    position: relative;
-    padding-right: 40px;
-  }
-
-  [data-accordion] > [data-control]:after {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 12px;
-    height: 15px;
-    width: 24px;
-  }
-
-  [data-accordion].open > [data-control]:after {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-  }
-}
-
-section#portfolio-v2 {
-  // width: 70%;
-  // position: absolute;
-  // left: 50%;
-  // top: 50%;
-  // transform: translate(-50%, -50%); /* Yep! */
   ul {
     display: flex;
     justify-content: space-between;
@@ -133,7 +22,6 @@ section#portfolio-v2 {
       img {
       }
       h2 {
-        visibility: hidden;
         text-transform: uppercase;
         letter-spacing: 4px;
         font-style: italic;
@@ -143,7 +31,6 @@ section#portfolio-v2 {
       }
     }
   }
-}
 
 #mobile-portfolio {
   display: none;
