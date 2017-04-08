@@ -16,13 +16,21 @@ header {
       position: fixed;
       font-size: 1rem;
       padding: 0 0 10px;
+      @media only screen and (min-width : 1224px) and (max-device-width : 1824px){
+        font-size: .7rem;
+      }
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        font-size: .7rem;
+      }
+
+
     }
     a.top-left {
       top: 40px;
       left: 60px;
     }
     a.top-right {
-      top: 60px;
+      top: 40px;
       right: 60px;
     }
     a.bottom-right {
@@ -44,6 +52,7 @@ header {
     display: block;
     }
     h1 {
+      display: none;
       position: fixed;
       top: 20px;
       left: 20px;
@@ -66,6 +75,9 @@ header {
         -ms-transition: all 200ms ease-in;
         -o-transition: all 200ms ease-in;
         transition: all 200ms ease-in;
+        @media only screen and (min-width : 1224px) and (max-device-width : 1824px){
+          width: 30px;
+        }
       }
       li.prev {
         position: fixed;
