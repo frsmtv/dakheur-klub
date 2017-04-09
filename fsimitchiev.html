@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/css/animate.min.css">
     <link rel="stylesheet" href="dist/css/overlay.css">
+    <link rel="stylesheet" href="sass/slick.scss">
+    <link rel="stylesheet" href="sass/slick-theme.scss">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
@@ -60,6 +62,7 @@
     <nav id="projects-nav">
 
         <ul>
+            <!-- <li class="prev animated fadeInLeft"><a href="sixringcircus.html"><img src="dist/img/prev.png" alt=""></a></li> -->
             <li class="next animated fadeInRight"><a href="laetitiacros.html"><img src="dist/img/next.png" alt=""></a></li>
         </ul>
 
@@ -85,8 +88,17 @@
         </div> <!-- End: single-project-heading -->
 
         <!-- **** SINGLE PROJECT CONTENT **** -->
+        <div class="slider animated fadeInUp">
 
-        <img class="animated fadeInUp" src="dist/img/screenshot-fsimitchiev.png" alt="">
+          <div>
+            <img src="dist/img/screenshot-fsimitchiev.png" alt="">
+          </div>
+
+          <!-- <div>
+            <img src="dist/img/screenshot-iray2.png" alt="">
+          </div> -->
+
+        </div> <!-- End: .slider -->
 
     </section>
 
@@ -94,6 +106,7 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/overlay.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>

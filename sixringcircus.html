@@ -7,6 +7,7 @@
     <meta name="author" content="typed in">
     <meta name="description" content="Typed in est un studio web basé à Lyon.">
     <title>typed in - Studio web | Lyon</title>
+
     <!--**** FONTS ****-->
     <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -17,6 +18,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="dist/css/animate.min.css">
     <link rel="stylesheet" href="dist/css/overlay.css">
+    <link rel="stylesheet" href="sass/slick.scss">
+    <link rel="stylesheet" href="sass/slick-theme.scss">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
@@ -58,10 +61,10 @@
     <!-- **** PROJECTS NAV **** -->
     <nav id="projects-nav">
 
-      <ul>
-          <li class="prev animated fadeInLeft"><a href="laetitiacros.html"><img src="dist/img/prev.png" alt=""></a></li>
-          <li class="next animated fadeInRight"><a href="iray.html"><img src="dist/img/next.png" alt=""></a></li>
-      </ul>
+        <ul>
+            <li class="prev animated fadeInLeft"><a href="laetitiacros.html"><img src="dist/img/prev.png" alt=""></a></li>
+            <li class="next animated fadeInRight"><a href="iray.html"><img src="dist/img/next.png" alt=""></a></li>
+        </ul>
 
     </nav> <!-- End: projects-nav -->
 
@@ -85,29 +88,25 @@
         </div> <!-- End: single-project-heading -->
 
         <!-- **** SINGLE PROJECT CONTENT **** -->
+        <div class="slider animated fadeInUp">
 
-        <img class="animated fadeInUp" src="dist/img/screenshot-sixringcircus.png" alt="">
+          <div>
+            <img src="dist/img/screenshot-sixringcircus.png" alt="">
+          </div>
+
+          <div>
+            <img src="dist/img/screenshot-sixringcircus2.png" alt="">
+          </div>
+
+        </div> <!-- End: .slider -->
 
     </section>
 
 </main>
 
-<!--**** FOOTER ****-->
-<footer>
-
-    <div class="footer-col">
-        <ul>
-            <li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
-            </a> </li>
-            <li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
-            </a> </li>
-        </ul>
-    </div>
-
-</footer>
-
 <script src="js/jquery.min.js"></script>
 <script src="js/overlay.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
 
 </body>
