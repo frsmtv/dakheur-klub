@@ -2,7 +2,7 @@
 
 section#portfolio {
   @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
-  display: none;
+  // display: none;
   }
   ul {
     display: flex;
@@ -40,8 +40,8 @@ section#portfolio {
 #mobile-portfolio {
   display: none;
   @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
-  display: block;
-  margin-top: 60px;
+  // display: block;
+  // margin-top: 60px;
   }
   ul {
     padding: 0 5%;

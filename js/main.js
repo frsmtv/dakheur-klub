@@ -17,7 +17,6 @@ $(document).ready(function() {
     // SLICK SLIDER
     $('.slider').slick({
     // setting-name: setting-value
-      // adaptiveHeight: true
       autoplay: true,
       dots: true
   });
