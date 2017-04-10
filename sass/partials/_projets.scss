@@ -1,9 +1,6 @@
 @import "mixins";
 
 section#portfolio {
-  @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
-  // display: none;
-  }
   ul {
     display: flex;
     justify-content: space-between;
@@ -19,12 +16,18 @@ section#portfolio {
         -webkit-box-shadow: -25px 25px 0 0 #00019c;
         box-shadow: -25px 25px 0 0 #00019c;
       }
+      @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+      }
       @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
         display: block;
         margin-left: auto;
         margin-right: auto;
       }
-
+      img {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+          width: 80%;
+        }
+      }
       h2 {
         text-transform: uppercase;
         letter-spacing: 4px;
@@ -32,6 +35,10 @@ section#portfolio {
         font-weight: 100;
         font-size: 1.5rem;
         text-align: center;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+          font-size: 1rem;
+          text-align: left;
+        }
       }
     }
   }
