@@ -112,6 +112,9 @@ main {
     margin-top: 60px;
     padding: 4% 60px;
     width: 70%;
+    @media only screen and (min-width : 1824px) {
+      max-width: 1200px;
+    }
     @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
     width: 100%;
     padding: 0;
