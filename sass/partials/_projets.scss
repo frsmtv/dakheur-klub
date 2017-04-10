@@ -15,16 +15,19 @@ section#portfolio {
       &:hover {
         -webkit-box-shadow: -25px 25px 0 0 #00019c;
         box-shadow: -25px 25px 0 0 #00019c;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
       }
-      @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
-      }
+
       @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
         display: block;
         margin-left: auto;
         margin-right: auto;
       }
       img {
-        @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           width: 80%;
         }
       }
@@ -35,7 +38,7 @@ section#portfolio {
         font-weight: 100;
         font-size: 1.5rem;
         text-align: center;
-        @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+        @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           font-size: 1rem;
           text-align: left;
         }
@@ -46,7 +49,7 @@ section#portfolio {
 
 #mobile-portfolio {
   display: none;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
   // display: block;
   // margin-top: 60px;
   }

@@ -7,7 +7,7 @@
   top: 50%;
   transform: translate(-50%, -50%); /* Yep! */
   // height: 59%;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
   width: 100%;
   }
   p {
@@ -21,8 +21,7 @@
     -ms-hyphens: none;
     hyphens: none;
 
-    @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
-    margin-top: 50vh;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
     font-size: 1.5rem;
     text-align: justify;
     letter-spacing: 2px;

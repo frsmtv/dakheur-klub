@@ -6,7 +6,7 @@
     text-align: justify;
     margin: 10% 0;
     padding: 5% 9% 15% 4%;
-    @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
     width: 90%;
     margin: 5% 0;
     }
@@ -15,7 +15,7 @@
       position: absolute;
       top: -80px;
       left: -50px;
-      @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+      @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
         top: -80px;
         left: 15px;
       }
@@ -26,7 +26,7 @@
     display: block;
     margin: 0 auto;
     height: 40px;
-    @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
       height: 20px;
     }
     @media only screen and (min-width : 1224px) and (max-device-width : 1824px){
@@ -67,7 +67,7 @@ transform: scale(1) rotate(0deg) translateX(0px) translateY(-10px) skewX(0deg) s
     margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
-    @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+    @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
     flex-direction: column;
     display: none;
     }
