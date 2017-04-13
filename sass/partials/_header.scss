@@ -1,13 +1,12 @@
 @import "mixins";
 
 header {
-  display: none;
   text-align: center;
   nav#main-nav {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10000;
+    z-index: -1;
     font-family: $navFont;
     letter-spacing: 4px;
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {

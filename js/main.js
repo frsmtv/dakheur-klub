@@ -1,13 +1,8 @@
 $(document).ready(function() {
 
-    // SCROLLA
-    // $('.animate').scrolla();
-
     // LAUNCH
     $('#launch').click(function(){
-      $('#launch').hide();
-      $('header').fadeIn();
-      $('#intro').fadeIn();
+      $('#launch').fadeOut();
     });
 
     // PROJECTS PAGE ANIMATION HOVER
@@ -22,10 +17,10 @@ $(document).ready(function() {
     });
 
     // SLICK SLIDER
-    $('.slider').slick({
-    // setting-name: setting-value
-      autoplay: true,
-      dots: true
-  });
+  //   $('.slider').slick({
+  //   // setting-name: setting-value
+  //     autoplay: true,
+  //     dots: true
+  // });
 
 });
