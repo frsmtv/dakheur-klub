@@ -3,6 +3,13 @@ $(document).ready(function() {
     // SCROLLA
     // $('.animate').scrolla();
 
+    // LAUNCH
+    $('#launch').click(function(){
+      $('#launch').hide();
+      $('header').fadeIn();
+      $('#intro').fadeIn();
+    });
+
     // PROJECTS PAGE ANIMATION HOVER
     $('#portfolio li').mouseover(function(){
         $('#portfolio li').not(this).css('opacity', '.5');

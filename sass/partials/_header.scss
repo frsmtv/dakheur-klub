@@ -1,6 +1,7 @@
 @import "mixins";
 
 header {
+  display: none;
   text-align: center;
   nav#main-nav {
     position: fixed;

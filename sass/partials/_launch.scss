@@ -1,0 +1,38 @@
+#launch {
+  width: 100vw;
+  height: 100vh;
+  background: url('../img/nasa.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  h1, h2, h3 {
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10rem;
+    line-height: .8;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+    &:hover {
+      cursor: pointer;
+      opacity: .5;
+    }
+  }
+  h2 {
+    font-size: 7.8rem;
+  }
+  h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 6.3rem;
+    line-height: .8;
+    padding-bottom: 8px;
+  }
+}
