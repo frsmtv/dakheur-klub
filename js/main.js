@@ -1,10 +1,5 @@
 $(document).ready(function() {
 
-    // LAUNCH
-    $('#launch').click(function(){
-      $('#launch').fadeOut();
-    });
-
     // PROJECTS PAGE ANIMATION HOVER
     $('#portfolio li').mouseover(function(){
         $('#portfolio li').not(this).css('opacity', '.5');
