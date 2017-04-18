@@ -2,8 +2,9 @@
 
 section#portfolio {
   ul {
+    text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-flow: row wrap;
     li {
       margin-bottom: 50px;
@@ -42,25 +43,8 @@ section#portfolio {
         text-align: center;
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           font-size: 1rem;
-          text-align: left;
         }
       }
-    }
-  }
-}
-
-#mobile-portfolio {
-  display: none;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-  // display: block;
-  // margin-top: 60px;
-  }
-  ul {
-    padding: 0 5%;
-    li {
-      font-size: 1.5rem;
-      line-height: 1.5;
-      letter-spacing: 2px;
     }
   }
 }
