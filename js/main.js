@@ -16,7 +16,7 @@ $(document).ready(function() {
     // CONTACT FORM ANIMATION
     $('#formlink').click(function(){
 
-        $('form').addClass('animated flipInX');
+        $('form').addClass('animated hinge');
 
         setTimeout(function() {
            $('form').removeClass("animated flipInX");
