@@ -14,6 +14,8 @@
     <!--**** FAVICON ****-->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/materialize.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/overlay.css">
     <link rel="stylesheet" href="css/ap-fullscreen-modal.css">
@@ -25,6 +27,7 @@
 <!--**** HEADER ****-->
 <header>
 
+    <!-- MAIN NAV -->
     <nav id="main-nav">
         <span><a class="non-active bottom-left" href="index.html">typed in</a> </span>
         <span><a class="non-active top-left" href="projets.html">projets</a> </span>
@@ -33,26 +36,26 @@
     </nav>
 
     <!-- **** MOBILE NAV **** -->
-        <div id="mobile-nav">
-            <h1><a href="index.html">typed in</a></h1>
+    <div id="mobile-nav">
+        <h1><a href="index.html">typed in</a></h1>
 
-            <div class="navbar-header">
-                <span id="toggle" class="toggle-button">me<br>
-                nu</span>
-            </div>
+        <div class="navbar-header">
+            <span id="toggle" class="toggle-button">me<br>
+            nu</span>
+        </div>
 
-            <nav id="overlay" class="overlay animated fadeIn">
+        <nav id="overlay" class="overlay animated fadeIn">
 
-                <ul>
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="info.html">info</a></li>
-                    <li><a href="projets.html">projets</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="info.html">info</a></li>
+                <li><a href="projets.html">projets</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
 
-            </nav>
+        </nav>
 
-        </div> <!-- End: mobile-nav -->
+    </div> <!-- End: mobile-nav -->
 
 </header>
 
@@ -63,9 +66,9 @@
     <section id="contact" class="animated fadeIn">
 
         <ul>
-            <li><a href="mailto:hello@typedin.studio">hello@typedin.studio</a> <span class="flash"></span> </li>
-            <!-- <li><a href="" id="formlink">demander un devis en ligne</a></li>
-            <li><a href="#" target="_blank">facebook</a> / <a href="#" target="_blank">twitter</a> </li> -->
+            <li><span id="e347719572">Enable javascript to display email.</span><script type="text/javascript">/*<![CDATA[*/eval("var a=\"mzys3wWtlcZJCU1eRBOxKbiv_TSG+8Qp7dIM-D906rkufog.EHPVanFA2X4L@qjhN5Y\";var b=a.split(\"\").sort().join(\"\");var c=\"EoaaAU@52ofHFyL@qfHA\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e347719572\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"")/*]]>*/</script><span class="flash"></span> </li>
+            <li><a href="#modal-content-1" id="formlink">posez-nous une question</a></li>
+            <li><a href="" id="formlink">demandez un devis en ligne</a></li>
         </ul>
 
 
@@ -75,11 +78,68 @@
         <div id="modal-content-1" class="modal-content">
             <div class="wrapper">
 
-                <!-- Change the width and height values to suit you best -->
-                <iframe id=iframe src=https://https://frsmtv.tellform.com/#!/forms/58d5706a8472a3aa5a5009d9 style=width:100%;height:500px></iframe>
-                <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px">Powered by<a href=https://www.tellform.com style="color: #999" target=_blank>TellForm</a></div>
+              <form class="col s12" method="POST" action="contact" enctype="multipart/form-data">
+
+                	<input type="hidden" name="_token" value="qt1z1umCc5pf5T95SFOF6nEu5meng2TpmMTsmtwe">
+
+        	        <div class="row">
+
+        				<div class="input-field col s2">
+        					<i class="material-icons prefix">account_circle</i>
+        				</div>
+
+        				<div class="input-field col s5">
+        					<input type="text" class="validate" id="first_name" name="first_name" required>
+          				<label for="first_name">Quel est votre prénom ?</label>
+        				</div>
+
+        				<div class="input-field col s5">
+                            <input type="text" class="validate" id="last_name" name="last_name" required>
+        					<label for="last_name">Quel est votre nom ?</label>
+        				</div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="input-field col s2">
+                            <i class="material-icons prefix">email</i>
+                        </div>
+
+                        <div class="input-field col s5">
+                            <input type="email" class="validate" id="email" name="email" required>
+                            <label for="email">A quelle adresse pouvons-nous vous contacter ?</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="input-field col s2">
+                            <i class="material-icons prefix">mode_edit</i>
+                        </div>
+
+                        <div class="input-field col s10">
+                            <!-- <textarea id="message" class="materialize-textarea"></textarea> -->
+                            <input type="text" class="validate" id="message" name="message" required>
+                            <label for="message">Quel est votre message ?</label>
+                        </div>
+
+                    </div>
+
+                    <!-- make it disable if all the fields are not filded in -->
+                    <div class="row">
+
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
+                        <i class="material-icons right">send</i>
+                      </button>
+
+                    </div>
+
+              </form>
 
             </div> <!-- End: wrapper -->
+
         </div> <!-- End: modal-content-1 -->
 
     </div> <!-- End: Modal > contact form -->

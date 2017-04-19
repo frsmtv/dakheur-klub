@@ -1,12 +1,17 @@
 @import "mixins";
 
 section#portfolio {
+  // width: 85vw!important;
+  margin: 0 auto;
   ul {
-  display: flex;
-  justify-content: space-between;
+    text-align: center;
     li {
-      width: 420px;
+      display: block;
+      float: left;
+      width: 25vw;
+      max-width: 400px;
       margin: 0 auto;
+      padding: 0 50px;
       text-align: center;
       margin-bottom: 50px;
       -webkit-transition: all 100ms ease-in;
@@ -14,6 +19,12 @@ section#portfolio {
       -ms-transition: all 100ms ease-in;
       -o-transition: all 100ms ease-in;
       transition: all 100ms ease-in;
+      &:nth-child(2n+1) {
+        clear: left;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+          clear: none;
+        }
+      }
       &:hover {
         -webkit-box-shadow: -15px 15px 0 0 #00019c;
         box-shadow: -15px 15px 0 0 #00019c;
@@ -23,16 +34,16 @@ section#portfolio {
         }
       }
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+        width: 70vw;
       }
       @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 40vw;
       }
-      @media only screen and (min-device-width : 1824px) {
-        padding: 0 5%;
-      }
+      // @media only screen and (min-device-width : 2600px) {
+      //   padding: 0 100px;
+      // }
       img {
+        width: 100%;
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           width: 80%;
         }
