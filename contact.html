@@ -88,12 +88,13 @@
         				</div>
 
         				<div class="input-field col s5">
-        					<input type="text" class="validate" id="first_name" name="first_name" placeholder="Quel est votre prénom ?" required>
-
+        					<input type="text" class="validate" id="first_name" name="first_name" required>
+              				<label for="first_name">Quel est votre prénom ?</label>
         				</div>
 
         				<div class="input-field col s5">
-                            <input type="text" class="validate" id="last_name" name="last_name" placeholder="Quel est votre nom ?" required>
+                            <input type="text" class="validate" id="last_name" name="last_name" required>
+        					<label for="last_name">Quel est votre nom ?</label>
         				</div>
 
                     </div>
@@ -105,7 +106,8 @@
                         </div>
 
                         <div class="input-field col s5">
-                            <input type="email" class="validate" id="email" name="email" placeholder="A quelle adresse pouvons-nous vous contacter ?" required>
+                            <input type="email" class="validate" id="email" name="email" required>
+                            <label for="email">A quelle adresse pouvons-nous vous contacter ?</label>
                         </div>
 
                     </div>
@@ -118,8 +120,8 @@
 
                         <div class="input-field col s10">
                             <!-- <textarea id="message" class="materialize-textarea"></textarea> -->
-                            <input type="text" class="validate" id="message" name="message" placeholder="Quel est votre message ?" required>
-
+                            <input type="text" class="validate" id="message" name="message" required>
+                            <label for="message">Quel est votre message ?</label>
                         </div>
 
                     </div>
@@ -149,17 +151,19 @@
 <script src="js/overlay.js"></script>
 <script src="js/ap-fullscreen-modal.min.js"></script>
 <script src="js/materialize.min.js"></script>
+
+</script>
 <script src="js/main.js"></script>
 
 <!-- **** MODAL **** -->
 <script type="text/javascript">
-			$(document).ready(function() {
-				$('#modal-content-1').apFullscreenModal({
-					openSelector: '#formlink',
-					closeSelector: '.close-modal, #send-1'
-				});
-			});
-		</script>
+	$(document).ready(function() {
+		$('#modal-content-1').apFullscreenModal({
+			openSelector: '#formlink',
+			closeSelector: '.close-modal, #send-1'
+		});
+	});
+</script>
 
 </body>
 </html>
