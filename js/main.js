@@ -13,4 +13,14 @@ $(document).ready(function() {
         $('#portfolio li').not(this).css('transform', 'scale(1)');
     });
 
+    // CONTACT FORM ANIMATION
+    $('#formlink').click(function(){
+
+        $('form').addClass('animated flipInX');
+
+        setTimeout(function() {
+           $('form').removeClass("animated flipInX");
+           }, 800);
+   });
+
 });

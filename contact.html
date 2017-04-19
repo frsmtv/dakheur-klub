@@ -67,7 +67,7 @@
 
         <ul>
             <li><span id="e347719572">Enable javascript to display email.</span><script type="text/javascript">/*<![CDATA[*/eval("var a=\"mzys3wWtlcZJCU1eRBOxKbiv_TSG+8Qp7dIM-D906rkufog.EHPVanFA2X4L@qjhN5Y\";var b=a.split(\"\").sort().join(\"\");var c=\"EoaaAU@52ofHFyL@qfHA\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e347719572\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"")/*]]>*/</script><span class="flash"></span> </li>
-            <li><a href="#modal-content-1" id="formlink">utilisez notre formulaire de contact</a></li>
+            <li><a href="#modal-content-1" id="formlink">contactez-nous</a></li>
         </ul>
 
 
@@ -101,6 +101,24 @@
 
                     <div class="row">
 
+                            <div class="input-field col s2">
+                                <i class="material-icons prefix">work</i>
+                            </div>
+
+                            <div class="input-field col s5">
+                                <input type="text" class="validate" id="company" name="company">
+                                <label for="company">Quel est le nom de votre groupe / association / société ?</label>
+                            </div>
+
+                            <div class="input-field col s5">
+                                <input type="text" class="validate" id="website" name="website">
+                                <label for="website">Avez-vous déjà un site web ?</label>
+                            </div>
+
+                    </div>
+
+                    <div class="row">
+
                         <div class="input-field col s2">
                             <i class="material-icons prefix">email</i>
                         </div>
@@ -121,12 +139,12 @@
                         <div class="input-field col s10">
                             <!-- <textarea id="message" class="materialize-textarea"></textarea> -->
                             <input type="text" class="validate" id="message" name="message" required>
-                            <label for="message">Quel est votre message ?</label>
+                            <label for="message">Quel est votre message ? (Précisez votre budget et le délai de livraison souhaité)</label>
                         </div>
 
                     </div>
 
-                    <!-- make it disable if all the fields are not filded in -->
+                    <!-- make it disable if all the fields are not filled in -->
                     <div class="row">
 
                         <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
@@ -152,7 +170,6 @@
 <script src="js/ap-fullscreen-modal.min.js"></script>
 <script src="js/materialize.min.js"></script>
 
-</script>
 <script src="js/main.js"></script>
 
 <!-- **** MODAL **** -->
