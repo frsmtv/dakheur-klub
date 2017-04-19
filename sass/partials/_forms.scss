@@ -3,9 +3,13 @@ form {
   display: block;
   margin: 0 auto;
   padding-top: 20vh;
-  label {
+  label:active {
+    // color: $mainColor!important;
+    display: none!important;
   }
-  input {
+  input:focus {
+    border-bottom: 1px solid $mainColor!important;
+    box-shadow: 0 1px 0 0 $mainColor!important;
   }
   button {
     margin-top: 50px;
