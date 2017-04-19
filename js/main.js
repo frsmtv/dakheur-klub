@@ -20,7 +20,7 @@ $(document).ready(function() {
 
         setTimeout(function() {
            $('form').removeClass("animated flipInX");
-           }, 800);
+        }, 18000);
    });
 
 });
