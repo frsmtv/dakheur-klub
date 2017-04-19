@@ -14,13 +14,17 @@ $(document).ready(function() {
     });
 
     // CONTACT FORM ANIMATION
-    $('#formlink').click(function(){
+   //  $('#formlink').click(function(){
+   //
+   //      $('form').addClass('animated hinge');
+   //
+   //      setTimeout(function() {
+   //         $('form').removeClass("animated flipInX");
+   //      }, 1800);
+   // });
 
-        $('form').addClass('animated hinge');
-
-        setTimeout(function() {
-           $('form').removeClass("animated flipInX");
-        }, 18000);
-   });
+   $('button').mouseover(function(){
+      $('form').addClass('animated hinge');
+   })
 
 });
