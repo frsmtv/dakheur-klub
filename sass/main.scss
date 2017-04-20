@@ -7,11 +7,7 @@
 @import "partials/intro";
 @import "partials/singleproject";
 @import "partials/forms";
-
-@font-face {
-    font-family: 'PaneuropaNeueRegular';
-    src: url('../fonts/PaneuropaNeueRegular.otf');
-}
+@import "partials/frame";
 
 html, body {
   width: 100vw;
@@ -19,8 +15,7 @@ html, body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  // font-family: $mainFont;
-  font-family: 'PaneuropaNeueRegular';
+  font-family: $mainFont;
   color: $mainColor;
   font-size: 16px;
   overflow: visible;

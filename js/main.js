@@ -23,4 +23,10 @@ $(document).ready(function() {
         }, 1800);
    });
 
+  //  MODAL
+   $('#modal-content-1').apFullscreenModal({
+     openSelector: '#formlink',
+     closeSelector: '.close-modal, #send-1'
+   });
+
 });

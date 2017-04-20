@@ -10,12 +10,13 @@
 
     <!--**** FONTS ****-->
     <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
     <!--**** FAVICON ****-->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/css/materialize.css">
+    <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/overlay.css">
     <link rel="stylesheet" href="css/ap-fullscreen-modal.css">
@@ -66,8 +67,8 @@
     <section id="contact" class="animated fadeIn">
 
         <ul>
-            <li><span id="e347719572">Enable javascript to display email.</span><script type="text/javascript">/*<![CDATA[*/eval("var a=\"mzys3wWtlcZJCU1eRBOxKbiv_TSG+8Qp7dIM-D906rkufog.EHPVanFA2X4L@qjhN5Y\";var b=a.split(\"\").sort().join(\"\");var c=\"EoaaAU@52ofHFyL@qfHA\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"e347719572\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"")/*]]>*/</script><span class="flash"></span> </li>
-            <li><a class="btn" href="#modal-content-1" id="formlink">contactez-nous</a></li>
+          <li><span id="email-address">Enable javascript to display email.</span><span class="flash"></span></li>
+          <li><a class="btn" href="#modal-content-1" id="formlink">contactez-nous</a></li>
         </ul>
 
 
@@ -169,18 +170,10 @@
 <script src="js/overlay.js"></script>
 <script src="js/ap-fullscreen-modal.min.js"></script>
 <script src="js/materialize.min.js"></script>
-
 <script src="js/main.js"></script>
 
-<!-- **** MODAL **** -->
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('#modal-content-1').apFullscreenModal({
-			openSelector: '#formlink',
-			closeSelector: '.close-modal, #send-1'
-		});
-	});
-</script>
+<!-- EMAIL ENCRIPT -->
+<script type="text/javascript">/*<![CDATA[*/eval("var a=\"mzys3wWtlcZJCU1eRBOxKbiv_TSG+8Qp7dIM-D906rkufog.EHPVanFA2X4L@qjhN5Y\";var b=a.split(\"\").sort().join(\"\");var c=\"EoaaAU@52ofHFyL@qfHA\";var d=\"\";for(var e=0;e<c.length;e++)d+=b.charAt(a.indexOf(c.charAt(e)));document.getElementById(\"email-address\").innerHTML=\"<a href=\\\"mailto:\"+d+\"\\\">\"+d+\"</a>\"")/*]]>*/</script>
 
 </body>
 </html>

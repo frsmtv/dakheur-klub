@@ -10,7 +10,7 @@
 
     <!--**** FONTS ****-->
     <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
     <!--**** FAVICON ****-->
 
@@ -22,6 +22,10 @@
 </head>
 
 <body class="animated fadeIn">
+
+  <!-- FRAME -->
+  <div id="frame">
+  </div>
 
 <!--**** HEADER ****-->
 <header>
@@ -125,6 +129,8 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/overlay.js"></script>
 <script src="js/jquery.fullpage.min.js"></script>
+
+</script>
 <script src="js/main.js"></script>
 
 <script type="text/javascript">
@@ -133,6 +139,16 @@ $(document).ready(function() {
       anchors:['firstPage', 'secondPage', 'thirdPage']
     });
 });
+</script>
+
+<script type="text/javascript">
+$(document).on('mousemove', function(e){
+    $('#frame').css({
+       left:  e.pageX,
+       top:   e.pageY
+    });
+});
+
 </script>
 
 </body>
