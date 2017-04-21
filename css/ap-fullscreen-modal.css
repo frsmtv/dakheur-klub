@@ -33,7 +33,15 @@ html.apfm-open > body {
 	-ms-transform: scale(0.8);
 	-o-transform: scale(0.8);
 	transform: scale(0.8);
-
+}
+/*.apfm-container:focus {
+	outline: none;
+}
+.apfm-wrapper:focus {
+	outline: none;
+}*/
+.modal-content:focus {
+	outline: none;
 }
 
 .apfm-container.apfm-opening,
