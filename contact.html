@@ -76,7 +76,7 @@
     <div style="display: none;">
 
         <div id="modal-content-1" class="modal-content">
-            <div class="wrapper" style="outline: none">
+            <div class="wrapper">
 
               <form class="col s12" method="POST" action="contact" enctype="multipart/form-data">
 
@@ -84,75 +84,75 @@
 
         	        <div class="row">
 
-        				<div class="input-field col s2">
-        					<i class="material-icons prefix">account_circle</i>
-        				</div>
+            				<div class="input-field col s2">
+            					<i class="material-icons prefix">account_circle</i>
+            				</div>
 
-        				<div class="input-field col s5">
-        					<input type="text" class="validate" id="first_name" name="first_name" required>
-              				<label for="first_name">Quel est votre prénom ?</label>
-        				</div>
+            				<div class="input-field col s5">
+            					<input type="text" class="validate require" id="first_name" name="first_name" required>
+                  				<label for="first_name">Quel est votre prénom ?</label>
+            				</div>
 
-        				<div class="input-field col s5">
-                            <input type="text" class="validate" id="last_name" name="last_name" required>
-        					<label for="last_name">Quel est votre nom ?</label>
-        				</div>
+            				<div class="input-field col s5">
+                      <input type="text" class="validate require" id="last_name" name="last_name" required>
+            					<label for="last_name">Quel est votre nom ?</label>
+            				</div>
 
+                  </div>
+
+                  <div class="row">
+
+                      <div class="input-field col s2">
+                          <i class="material-icons prefix">work</i>
+                      </div>
+
+                      <div class="input-field col s5">
+                          <input type="text" class="validate" id="company" name="company">
+                          <label for="company">Quel est le nom de votre groupe / association / société ?</label>
+                      </div>
+
+                      <div class="input-field col s5">
+                          <input type="text" class="validate" id="website" name="website">
+                          <label for="website">Avez-vous déjà un site web ?</label>
+                      </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="input-field col s2">
+                        <i class="material-icons prefix">email</i>
                     </div>
 
-                    <div class="row">
-
-                            <div class="input-field col s2">
-                                <i class="material-icons prefix">work</i>
-                            </div>
-
-                            <div class="input-field col s5">
-                                <input type="text" class="validate" id="company" name="company">
-                                <label for="company">Quel est le nom de votre groupe / association / société ?</label>
-                            </div>
-
-                            <div class="input-field col s5">
-                                <input type="text" class="validate" id="website" name="website">
-                                <label for="website">Avez-vous déjà un site web ?</label>
-                            </div>
-
+                    <div class="input-field col s5">
+                        <input type="email" class="validate require" id="email" name="email" required>
+                        <label for="email">A quelle adresse pouvons-nous vous contacter ?</label>
                     </div>
 
-                    <div class="row">
+                  </div>
 
-                        <div class="input-field col s2">
-                            <i class="material-icons prefix">email</i>
-                        </div>
+                  <div class="row">
 
-                        <div class="input-field col s5">
-                            <input type="email" class="validate" id="email" name="email" required>
-                            <label for="email">A quelle adresse pouvons-nous vous contacter ?</label>
-                        </div>
-
+                    <div class="input-field col s2">
+                        <i class="material-icons prefix">mode_edit</i>
                     </div>
 
-                    <div class="row">
-
-                        <div class="input-field col s2">
-                            <i class="material-icons prefix">mode_edit</i>
-                        </div>
-
-                        <div class="input-field col s10">
-                            <!-- <textarea id="message" class="materialize-textarea"></textarea> -->
-                            <textarea class="materialize-textarea" id="message" name="message" required></textarea>
-                            <label for="message">Quel est votre message ? (Précisez votre <b>budget</b> et le <b>délai de livraison</b> souhaité)</label>
-                        </div>
-
+                    <div class="input-field col s10">
+                        <!-- <textarea id="message" class="materialize-textarea"></textarea> -->
+                        <textarea class="materialize-textarea" id="message" name="message" required></textarea>
+                        <label for="message">Quel est votre message ? (Précisez votre <b>budget</b> et le <b>délai de livraison</b> souhaité)</label>
                     </div>
 
-                    <!-- make it disable if all the fields are not filled in -->
-                    <div style="text-align:center" class="row">
+                  </div>
 
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
-                        <i class="material-icons right">send</i>
-                        </button>
+                  <!-- make it disable if all the fields are not filled in -->
+                  <div style="text-align:center" class="row">
 
-                    </div>
+                    <button id="envoyer" class="disabled btn waves-effect waves-light" type="submit" name="action">Envoyer
+                    <i class="material-icons right">send</i>
+                    </button>
+
+                  </div>
 
               </form>
 

@@ -65,6 +65,25 @@ $(document).ready(function() {
      $('#main-nav a').not(this).css('opacity', '');
    })
 
+   //  CONTACT FORM SUBMIT BUTTON ACTIVATION
+   // If all fields with class 'require' have the 'valid' class, activate submit button
+
+  // Testing each required form, and counting successes
+  // Test has to be done after the input has been filled (leaved > blur?)
+  var validRequired = 0;
+  $('.require').each(function(){
+    if($(this).blur().hasClass("valid")) {
+      validRequired++;
+      console.log('valid!');
+    }
+  });
+
+  // If number of successes = number of required fields, activate submit button
+  if (validRequired == $('.require').length) {
+    $('#envoyer').removeClass('disabled');
+    console.log('activate button!');
+  }
+
   //  MODAL
   // (Always put this function on bottom of document)
    $('#modal-content-1').apFullscreenModal({
