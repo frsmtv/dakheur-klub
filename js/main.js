@@ -24,7 +24,6 @@ $(document).ready(function() {
    });
 
    //  NAV HOVER EFFECT ON SECTIONS
-
    // MAIN MENU
    $('#main-nav a').not('.active').mouseover(function(){
      $('#intro').css('opacity', '.4');
@@ -40,7 +39,7 @@ $(document).ready(function() {
      $('#main-nav a').not(this).css('opacity', '');
    })
 
-   // SINGLE NAV
+   // SINGLE-PROJECTS NAV
    $('.next').mouseover(function(){
      $('section').css('opacity', '.4');
      $('section').css('-webkit-filter', 'grayscale(100%)');
@@ -66,23 +65,21 @@ $(document).ready(function() {
    })
 
    //  CONTACT FORM SUBMIT BUTTON ACTIVATION
-   // If all fields with class 'require' have the 'valid' class, activate submit button
+   $(document).ready(function (){
+    validate();
+   $('.require').change(validate);
+   });
 
-  // Testing each required form, and counting successes
-  // Test has to be done after the input has been filled (leaved > blur?)
-  var validRequired = 0;
-  $('.require').each(function(){
-    if($(this).blur().hasClass("valid")) {
-      validRequired++;
-      console.log('valid!');
-    }
-  });
-
-  // If number of successes = number of required fields, activate submit button
-  if (validRequired == $('.require').length) {
-    $('#envoyer').removeClass('disabled');
-    console.log('activate button!');
-  }
+   function validate(){
+       if ($('#first_name').val().length   >   0   &&
+           $('#last_name').val().length  >   0   &&
+           $('#email').val().length  >   0 ) {
+           $('#envoyer').removeClass('disabled');
+       }
+       else {
+         $('#envoyer').addClass('disabled');
+       }
+   }
 
   //  MODAL
   // (Always put this function on bottom of document)
