@@ -28,58 +28,58 @@ $(document).ready(function() {
    $('#main-nav a').not('.active').mouseover(function(){
      $('#intro').css('opacity', '.4');
      $('section').css('opacity', '.4');
-     $('section').css('-webkit-filter', 'grayscale(100%)');
      $('#main-nav a').not(this).css('opacity', '.3');
    })
 
    $('#main-nav a').not('.active').mouseout(function(){
      $('#intro').css('opacity', '');
      $('section').css('opacity', '');
-     $('section').css('-webkit-filter', 'grayscale(0%)');
      $('#main-nav a').not(this).css('opacity', '');
    })
 
    // SINGLE-PROJECTS NAV
    $('.next').mouseover(function(){
      $('section').css('opacity', '.4');
-     $('section').css('-webkit-filter', 'grayscale(100%)');
      $('#main-nav a').not(this).css('opacity', '.3');
    })
 
    $('.next').mouseout(function(){
      $('section').css('opacity', '');
-     $('section').css('-webkit-filter', 'grayscale(0%)');
      $('#main-nav a').not(this).css('opacity', '');
    })
 
    $('.prev').mouseover(function(){
      $('section').css('opacity', '.4');
-     $('section').css('-webkit-filter', 'grayscale(100%)');
      $('#main-nav a').not(this).css('opacity', '.3');
    })
 
    $('.prev').mouseout(function(){
      $('section').css('opacity', '');
-     $('section').css('-webkit-filter', 'grayscale(0%)');
      $('#main-nav a').not(this).css('opacity', '');
    })
 
    //  CONTACT FORM SUBMIT BUTTON ACTIVATION
-   $(document).ready(function (){
-    validate();
-   $('.require').change(validate);
-   });
+  //  $(document).ready(function (){
+  //   validate();
+  //  $('.require').change(validate);
+  //  });
+   //
+  //  function validate(){
+  //      if ($('#first_name').val().length   >   0   &&
+  //          $('#last_name').val().length  >   0   &&
+  //          $('#email').val().length  >   0 ) {
+  //          $('#envoyer').removeClass('disabled');
+  //      }
+  //      else {
+  //        $('#envoyer').addClass('disabled');
+  //      }
+  //  }
 
-   function validate(){
-       if ($('#first_name').val().length   >   0   &&
-           $('#last_name').val().length  >   0   &&
-           $('#email').val().length  >   0 ) {
-           $('#envoyer').removeClass('disabled');
-       }
-       else {
-         $('#envoyer').addClass('disabled');
-       }
-   }
+   //  404 PAGE
+   $('#houston').click(function(){
+     $('#houston-nav').fadeIn();
+     $('#error q').fadeOut();
+   })
 
   //  MODAL
   // (Always put this function on bottom of document)
