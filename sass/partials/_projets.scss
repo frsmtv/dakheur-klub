@@ -5,19 +5,18 @@ section#portfolio {
   ul {
     li {
       display: inline-block;
-      width: 25vw;
-      max-width: 420px;
+      // width: 25vw;
+      // max-width: 420px;
       padding: 0 20px;
       margin: 0 40px 50px 40px;
-      // margin-bottom: 50px;
       -webkit-transition: all 100ms ease-in;
       -moz-transition: all 100ms ease-in;
       -ms-transition: all 100ms ease-in;
       -o-transition: all 100ms ease-in;
       transition: all 100ms ease-in;
       &:hover {
-        -webkit-box-shadow: -15px 15px 0 0 #00019c;
-        box-shadow: -15px 15px 0 0 #00019c;
+        // -webkit-box-shadow: -15px 15px 0 0 #00019c;
+        // box-shadow: -15px 15px 0 0 $mainColor;
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           -webkit-box-shadow: none;
           box-shadow: none;
@@ -34,6 +33,18 @@ section#portfolio {
       // }
       img {
         width: 100%;
+        border: 1px solid $mainColor;
+        -webkit-transition: all 100ms ease-in;
+        -moz-transition: all 100ms ease-in;
+        -ms-transition: all 100ms ease-in;
+        -o-transition: all 100ms ease-in;
+        transition: all 100ms ease-in;
+        &:hover {
+          -webkit-box-shadow: 0px 21px 32px 0px rgba(0,0,255,0.57);
+          -moz-box-shadow: 0px 21px 32px 0px rgba(0,0,255,0.57);
+          box-shadow: 0px 21px 32px 0px rgba(0,0,255,0.57);
+          margin-bottom: 50px;
+        }
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           width: 80%;
         }

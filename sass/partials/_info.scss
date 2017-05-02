@@ -7,6 +7,7 @@ div#brand {
   width: 100%;
   top: 25vh;
   left: 10vw;
+  text-transform: uppercase;
   @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
     font-size: 2rem;
     left: 10px;
@@ -26,17 +27,37 @@ div#brand {
     position: relative;
     text-align: justify;
     margin: 10% 0;
-    padding: 5% 9% 15% 4%;
+    // padding: 5% 9% 15% 4%;
+    padding: 2%;
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
     width: 90%;
     margin: 5% 0;
+    }
+  }
+  q {
+    font-style: italic;
+  }
+  h3, h4 {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    padding-top: 40px;
+  }
+  article {
+    ul {
+      letter-spacing: 2px;
+      padding: 2%;
+      font-family: $navFont;
+      font-size: 90%;
+      line-height: 2;
     }
   }
   // Arrows
   img {
     display: block;
     margin: 0 auto;
-    height: 40px;
+    height: 30px;
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
       height: 20px;
     }
@@ -51,7 +72,7 @@ div#brand {
     &.down {
       position: absolute;
       left: 50%;
-      bottom: 20vh;
+      bottom: 15vh;
     }
     &.up {
       position: absolute;
