@@ -1,12 +1,10 @@
 @import "mixins";
 
 section#portfolio {
-  text-align: center;
   ul {
     li {
+      text-align: center;
       display: inline-block;
-      // width: 25vw;
-      // max-width: 420px;
       padding: 0 20px;
       margin: 0 40px 50px 40px;
       -webkit-transition: all 100ms ease-in;
@@ -15,8 +13,6 @@ section#portfolio {
       -o-transition: all 100ms ease-in;
       transition: all 100ms ease-in;
       &:hover {
-        // -webkit-box-shadow: -15px 15px 0 0 #00019c;
-        // box-shadow: -15px 15px 0 0 $mainColor;
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           -webkit-box-shadow: none;
           box-shadow: none;
@@ -25,25 +21,19 @@ section#portfolio {
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
         width: 70vw;
       }
-      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-        width: 40vw;
-      }
-      // @media only screen and (min-device-width : 2600px) {
-      //   padding: 0 100px;
-      // }
       img {
         width: 100%;
         border: 1px solid $mainColor;
-        -webkit-transition: all 100ms ease-in;
-        -moz-transition: all 100ms ease-in;
-        -ms-transition: all 100ms ease-in;
-        -o-transition: all 100ms ease-in;
-        transition: all 100ms ease-in;
+        -webkit-transition: all 200ms ease-in;
+        -moz-transition: all 200ms ease-in;
+        -ms-transition: all 200ms ease-in;
+        -o-transition: all 200ms ease-in;
+        transition: all 200ms ease-in;
         &:hover {
           -webkit-box-shadow: 0px 21px 32px 0px rgba(0,0,255,0.57);
           -moz-box-shadow: 0px 21px 32px 0px rgba(0,0,255,0.57);
           box-shadow: 0px 21px 32px 0px rgba(0,0,255,0.57);
-          margin-bottom: 50px;
+          // border: none;
         }
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           width: 80%;
@@ -55,6 +45,7 @@ section#portfolio {
         font-style: italic;
         font-weight: 100;
         font-size: 1.4rem;
+        margin-top: 40px;
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           font-size: 1rem;
         }

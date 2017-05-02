@@ -11,7 +11,7 @@
 @import "partials/404";
 
 html, body {
-  width: 100vw;
+  // width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
@@ -19,14 +19,15 @@ html, body {
   font-family: $mainFont;
   color: $mainColor;
   font-size: 16px;
-  overflow: visible;
-  overflow-x: hidden;
-  overflow-y: visible;
 }
+
+// PROGRESS BAR
+
 
 // SCROLLBARS
 ::-webkit-scrollbar {
     width: 8px;
+    // display: none;
 }
 ::-webkit-scrollbar-track {
     background-color: #fff;
@@ -34,6 +35,9 @@ html, body {
 }
 ::-webkit-scrollbar-thumb {
     background-color: $mainColor;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
 }
 ::-webkit-scrollbar-thumb:hover {
 }
@@ -106,6 +110,15 @@ h1 {
   color: $mainColor;
   margin: 0 0 40px 0;
 
+}
+
+#frame {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  border: 8px solid $mainColor;
 }
 
 main {

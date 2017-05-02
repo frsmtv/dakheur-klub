@@ -27,6 +27,8 @@
   <div id="frame">
   </div>
 
+  <!-- PROGRESS BAR -->
+
 <!--**** HEADER ****-->
 <header>
 
@@ -70,35 +72,37 @@
 
       <section id="info">
 
-        <!-- <div id="info-bg">
-          <img src="img/work.jpg" alt="">
-        </div> -->
+        <div id="info-bg">
+          <img src="img/brain.png" alt="">
+        </div>
 
           <div class="section animated fadeIn" data-anchor="firstPage">
 
-              <p>
+              <p class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
                   conçoit et façonne des sites web sur mesure et adaptés à tous les supports numériques.
-                  Nous allions le design aux dernières technologies afin de réaliser des expériences élégantes et fonctionnelles, avec pour maîtres mots : simplicité et soucis du détail.
+                  Nous allions le design aux dernières technologies afin de réaliser des expériences élégantes et fonctionnelles, avec pour maîtres mots : simplicité, éloquence et soucis du détail.
                   <br>
               </p>
 
-              <q cite="Léonard de Vinci">La simplicité est la sophistication ultime</q> <br>
-              Bernard de Vinci
+              <q class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0" cite="Léonard de Vinci">La simplicité est la sophistication ultime.</q>  Bernard de Vinci
 
-              <a class="animated fadeInDown infinite" href="#secondPage"> <img class="down" src="img/down.png" alt=""> </a>
+              <div class="vertical-line animate" data-animate="zoomIn" data-duration="2.0s" data-delay="0.1s" data-offset="0"></div>
+
+              <!-- <a class="animated fadeInDown infinite" href="#secondPage"> <img class="down" src="img/down.png" alt=""> </a> -->
 
           </div>
 
           <div class="section" data-anchor="secondPage">
 
-                <article>
+                <article class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
 
-                  <h3>Ce que nous faisons</h3>
+                  <h3 class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" data-offset="0">Ce que nous faisons</h3>
 
-                  <ul>
+                  <ul class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" data-offset="0">
 
-                    <li>Design Responsive multi-supports / UI design</li>
+                    <li>Design / UI design</li>
                     <li>Développement Front end & Back end</li>
+                    <li>Responsive multi-support</li>
                     <li>Respect des normes W3C</li>
                     <li>Code propre et SEO friendly</li>
 
@@ -106,33 +110,49 @@
 
                 </article>
 
-                <div class="img-wrapper">
+                <div class="vertical-line animate" data-animate="zoomIn" data-duration="2.0s" data-delay="0.1s" data-offset="0"></div>
 
-                    <img src="img/html-css.png" alt="html css logo">
-                    <img src="img/sass.png" alt="sass logo">
-                    <img src="img/js.png" alt="javascript logo">
-                    <img src="img/jquery.png" alt="jQuey logo">
-                    <img src="img/php.png" alt="php logo">
-                    <img src="img/laravel.png" alt="laravel logo">
-                    <img src="img/wp.png" alt="wordpress logo">
+                <!-- <a class="animated fadeInDown infinite" href="#thirdPage"> <img class="down" src="img/down.png" alt=""> </a> -->
 
-                </div> <!-- End: img-wrapper -->
+          </div>
 
-                <a class="animated fadeInDown infinite" href="#secondPage"> <img class="down" src="img/down.png" alt=""> </a>
+          <div class="section">
+
+            <article class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
+
+              <h3 class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" data-offset="0">Les technologies que nous utilisons</h3>
+
+              <div class="img-wrapper animate" data-animate="zoomIn" data-duration="1.0s" data-delay="0.1s" data-offset="0">
+
+                  <img src="img/html-css.png" alt="html css logo">
+                  <img src="img/sass.png" alt="sass logo">
+                  <img src="img/js.png" alt="javascript logo">
+                  <img src="img/jquery.png" alt="jQuey logo">
+                  <img src="img/php.png" alt="php logo">
+                  <img src="img/laravel.png" alt="laravel logo">
+                  <img src="img/wp.png" alt="wordpress logo">
+
+              </div> <!-- End: img-wrapper -->
+
+            </article>
+
+            <div class="vertical-line animate" data-animate="zoomIn" data-duration="2.0s" data-delay="0.1s" data-offset="0"></div>
+
+            <!-- <a class="animated fadeInDown infinite" href="#thirdPage"> <img class="down" src="img/down.png" alt=""> </a> -->
 
           </div>
 
           <div class="section" data-anchor="thirdPage">
 
-                <article>
+                <article class="animate" data-animate="fadeIn" data-duration="2.0s" data-delay="0.1s" data-offset="0">
 
-                  <h3>s'appuie sur un réseau de professionnels proposant des services complémentaires</h3>
+                  <h3 class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" data-offset="0"> Services complémentaires que nous pouvons proposer grâce à notre réseau de professionnels</h3>
 
-                  <ul>
+                  <ul class="animate" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" data-offset="0">
 
                     <li>Graphisme (conception identité / logotype / charte graphique)</li>
                     <li>Photo / vidéo</li>
-                    <li>Conseil en communication</li>
+                    <li>Communication digitale / community management</li>
                     <li>Référencement</li>
                     <li>Traduction</li>
 
@@ -154,16 +174,8 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/overlay.js"></script>
-<script src="js/jquery.fullpage.min.js"></script>
+<script src="js/scrolla.jquery.min.js"></script>
 <script src="js/main.js"></script>
-
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#fullpage').fullpage({
-      anchors:['firstPage', 'secondPage', 'thirdPage']
-    });
-});
-</script>
 
 </body>
 </html>

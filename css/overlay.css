@@ -4,7 +4,7 @@
     top: 20px;
     right: 20px;
     cursor: pointer;
-    border: 1px solid #00019C;
+    border: 1px solid #0000ff;
     padding: 2%;
     margin-top: 0!important;
     z-index: 2001;
@@ -68,7 +68,7 @@
     position: relative;
     top: 40px;
     left: 20px;
-    color: #00019C;
+    color: #0000ff;
     font-size: 2rem;
     text-align: left;
     list-style: none;

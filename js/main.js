@@ -3,14 +3,10 @@ $(document).ready(function() {
     // PROJECTS PAGE ANIMATION HOVER
     $('#portfolio li').mouseover(function(){
         $('#portfolio li').not(this).css('opacity', '.5');
-        // $('#portfolio li').not(this).css('transform', 'scale(.95)');
-        // $(this).css('transform', 'scale(1.01)');
     });
 
     $('#portfolio li').mouseout(function(){
         $('#portfolio li').css('opacity', '1');
-        // $(this).css('transform', 'scale(1)');
-        // $('#portfolio li').not(this).css('transform', 'scale(1)');
     });
 
     // CONTACT FORM ANIMATION
@@ -58,34 +54,13 @@ $(document).ready(function() {
      $('#main-nav a').not(this).css('opacity', '');
    })
 
-   //  CONTACT FORM SUBMIT BUTTON ACTIVATION
-  //  $(document).ready(function (){
-  //   validate();
-  //  $('.require').change(validate);
-  //  });
-   //
-  //  function validate(){
-  //      if ($('#first_name').val().length   >   0   &&
-  //          $('#last_name').val().length  >   0   &&
-  //          $('#email').val().length  >   0 ) {
-  //          $('#envoyer').removeClass('disabled');
-  //      }
-  //      else {
-  //        $('#envoyer').addClass('disabled');
-  //      }
-  //  }
-
    //  404 PAGE
    $('#houston').click(function(){
      $('#houston-nav').fadeIn();
      $('#error q').fadeOut();
    })
 
-  //  MODAL
-  // (Always put this function on bottom of document)
-   $('#modal-content-1').apFullscreenModal({
-     openSelector: '#formlink',
-     closeSelector: '.close-modal, #send-1'
-   });
+   // SCROLLA
+   $('.animate').scrolla();
 
 });
