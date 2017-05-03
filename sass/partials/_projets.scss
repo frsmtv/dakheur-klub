@@ -17,6 +17,9 @@ section#portfolio {
       -ms-transition: all 100ms ease-in;
       -o-transition: all 100ms ease-in;
       transition: all 100ms ease-in;
+      &:last-child {
+        height: auto;
+      }
       &:hover {
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
         }
