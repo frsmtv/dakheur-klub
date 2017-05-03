@@ -53,6 +53,16 @@ section#portfolio {
         font-weight: 100;
         font-size: 1.4rem;
         margin-top: 40px;
+        span, i {
+          font-size: 50%;
+          border-left: 1px solid $mainColor;
+          padding-left: 20px;
+          vertical-align: middle;
+        }
+        span {
+          font-family: $navFont;
+          // font-style: normal;
+        }
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           font-size: 1rem;
         }
