@@ -78,8 +78,8 @@ html.apfm-open > body {
 	z-index: 1000;
 	top: 20px;
 	right: 20px;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	cursor: pointer;
 
 	/* No blue selection when clicking on the cross */
@@ -134,4 +134,12 @@ html.apfm-open > body {
   -o-transition: all 400ms ease-in;
   transition: all 400ms ease-in;
 	opacity: .5;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+	.apfm-container .apfm-close-button {
+		width: 25px;
+		height: 25px;
+	}
 }

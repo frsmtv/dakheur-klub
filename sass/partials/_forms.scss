@@ -1,10 +1,12 @@
+@import "mixins";
+
 form {
   width: 90vw;
   display: block;
   margin: 0 auto;
   padding-top: 10vh;
-  label:active {
-    // display: none!important;
+  label.active {
+    color: $mainColor!important;
   }
   input:focus {
     border-bottom: 1px solid $mainColor!important;

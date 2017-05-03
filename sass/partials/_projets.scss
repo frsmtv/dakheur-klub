@@ -1,6 +1,10 @@
 @import "mixins";
 
 section#portfolio {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+  overflow-x: hidden;
+  margin-top: 40px;
+  }
   ul {
     li {
       text-align: center;
@@ -14,12 +18,11 @@ section#portfolio {
       transition: all 100ms ease-in;
       &:hover {
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-          -webkit-box-shadow: none;
-          box-shadow: none;
         }
       }
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-        width: 70vw;
+        width: 90%;
+        margin: 40px 0;
       }
       img {
         width: 100%;
@@ -36,7 +39,7 @@ section#portfolio {
           // border: none;
         }
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-          width: 80%;
+          width: 100%;
         }
       }
       h2 {
