@@ -5,17 +5,17 @@ form {
   display: block;
   margin: 0 auto;
   padding-top: 10vh;
-  label.active {
+  label.active, input.field, .lever, .swith {
     color: $mainColor!important;
   }
-  .lever, .switch {
+  span.lever::after {
     color: $mainColor!important;
   }
   input:focus {
     border-bottom: 1px solid $mainColor!important;
     box-shadow: 0 1px 0 0 $mainColor!important;
   }
-  button, .btn {
+  button, .btn, .waves-effect, .waves-light {
     margin-top: 50px;
     letter-spacing: 2px;
     background: $mainColor!important;
