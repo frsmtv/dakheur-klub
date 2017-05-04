@@ -38,11 +38,6 @@
     transform: translate(-50%, -50%); /* Yep! */;
     font-size: .8rem;
   }
-  span#credits::before {
-    content: "ok";
-    color: red;
-    font-size: 4rem;
-  }
   a#houston {
     position: absolute;
     z-index: 1;
