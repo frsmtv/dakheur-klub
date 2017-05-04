@@ -30,19 +30,11 @@
     transform: translate(-50%, -50%); /* Yep! */;
     font-size: 1rem;
   }
-  span#quote-author {
+  span#credits {
     position: absolute;
     z-index: -1;
     left: 50%;
     top: 65%;
-    transform: translate(-50%, -50%); /* Yep! */;
-    font-size: 1rem;
-  }
-  span#quote-origin {
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    top: 70%;
     transform: translate(-50%, -50%); /* Yep! */;
     font-size: 1rem;
   }
