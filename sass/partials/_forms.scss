@@ -22,6 +22,10 @@ form {
     border-bottom: 1px solid $mainColor!important;
     box-shadow: 0 1px 0 0 $mainColor!important;
   }
+  input.valid {
+    border-bottom: 1px solid $mainColor!important;
+    box-shadow: 0 1px 0 0 $mainColor!important;
+  }
   button, .btn, .btn-large .waves-effect, .waves-light {
     margin-top: 50px;
     letter-spacing: 2px;
