@@ -30,6 +30,14 @@
     transform: translate(-50%, -50%); /* Yep! */;
     font-size: 1rem;
   }
+  span#quote-author {
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -50%); /* Yep! */;
+    font-size: 1rem;
+  }
   a#houston {
     position: absolute;
     z-index: 1;
