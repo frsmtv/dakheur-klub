@@ -112,15 +112,6 @@ h1 {
 
 }
 
-#frame {
-  display: none;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  border: 8px solid $mainColor;
-}
-
 main {
   section {
     -webkit-transition: all 200ms ease-in;
@@ -136,8 +127,8 @@ main {
     @media only screen and (min-width : 1824px) {
       max-width: 1200px;
     }
-    @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
-    width: 100%;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 740) {
+    // width: 100%;
     padding: 0;
     margin-top: 0;
     }

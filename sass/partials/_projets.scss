@@ -28,7 +28,7 @@ section#portfolio {
         }
       }
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-        width: 90%;
+        width: 100%;
         margin: 40px 0;
       }
       img {
@@ -43,7 +43,6 @@ section#portfolio {
           -webkit-box-shadow: 0px 21px 32px 0px rgba(0,0,255,0.57);
           -moz-box-shadow: 0px 21px 32px 0px rgba(0,0,255,0.57);
           box-shadow: 0px 21px 32px 0px rgba(0,0,255,0.57);
-          // border: none;
         }
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           width: 100%;

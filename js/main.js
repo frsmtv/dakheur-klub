@@ -62,7 +62,7 @@ $(document).ready(function() {
   var offset = startchange.offset();
   $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
+      if(scroll_start > offset.top && window.width < '740px') {
           $('header').fadeOut();
 
       } else {
