@@ -3,7 +3,14 @@
 header {
   text-align: center;
   @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-  background: #fff;
+  background: $mainColor;
+  color: #fff;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
   }
   nav#main-nav {
     position: fixed;
@@ -58,7 +65,7 @@ header {
       z-index: 1;
       top: 20px;
       left: 20px;
-      background: #fff;
+      color: #fff;
     }
     span {
       margin-top: 5vh;
@@ -67,7 +74,6 @@ header {
       font-weight: 100;
       line-height: .8;
       text-transform: uppercase;
-      background: #fff;
     }
   }
   nav#projects-nav {

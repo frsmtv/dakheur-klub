@@ -46,7 +46,7 @@
 
 .overlay {
     position: fixed;
-    background: #fff;
+    background: #0000FF;
     z-index: 2000;
     top: 0;
     left: 0;
@@ -65,12 +65,14 @@
 }
 .overlay ul {
     display: block;
-    position: relative;
-    top: 40px;
-    left: 20px;
-    color: #0000ff;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Yep! */
+    color: #fff;
     font-size: 2rem;
-    text-align: left;
+    text-align: center;
     list-style: none;
     letter-spacing: 2px;
     line-height: 2;
@@ -88,5 +90,5 @@
     text-decoration: none;
 }
 .overlay ul li a:hover {
-
+  opacity: .8;
 }

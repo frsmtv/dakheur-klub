@@ -3,15 +3,13 @@ $(document).ready(function() {
     // PORTFOLIO PAGE ANIMATION HOVER
     $('#portfolio li').mouseover(function(){
         $('#portfolio li img').css('opacity', '.8');
-        $('div.status').show().addClass('animated flipInX');
+        $(this).find('div.status').show().addClass('animated fadeIn');
     });
 
     $('#portfolio li').mouseout(function(){
         $('#portfolio li img').css('opacity', '1');
-        $('div.status').hide();
+        $(this).find('div.status').hide();
     });
-
-    // PORTFOLIO CAPTIONS
 
     // CONTACT FORM ANIMATION
     $('#formlink').click(function(){
@@ -57,6 +55,20 @@ $(document).ready(function() {
      $('section').css('opacity', '');
      $('#main-nav a').not(this).css('opacity', '');
    })
+
+  //  MOBILE NAV
+  var scroll_start = 0;
+  var startchange = $('body');
+  var offset = startchange.offset();
+  $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('header').fadeOut();
+
+      } else {
+          $('header').fadeIn();
+      }
+  });
 
    //  404 PAGE
    $('#houston').click(function(){
