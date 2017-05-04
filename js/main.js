@@ -57,18 +57,18 @@ $(document).ready(function() {
    })
 
   //  MOBILE NAV
-  var scroll_start = 0;
-  var startchange = $('body');
-  var offset = startchange.offset();
-  $(document).scroll(function() {
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top && window.width < '740px') {
-          $('header').fadeOut();
-
-      } else {
-          $('header').fadeIn();
-      }
-  });
+  // var scroll_start = 0;
+  // var startchange = $('body');
+  // var offset = startchange.offset();
+  // $(document).scroll(function() {
+  //     scroll_start = $(this).scrollTop();
+  //     if(scroll_start > offset.top && window.width < '740px') {
+  //         $('header').fadeOut();
+  //
+  //     } else {
+  //         $('header').fadeIn();
+  //     }
+  // });
 
    //  404 PAGE
    $('#houston').click(function(){

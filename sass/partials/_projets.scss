@@ -28,7 +28,6 @@ section#portfolio {
         }
       }
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-        width: 100%;
         margin: 40px 0;
       }
       img {
@@ -51,7 +50,6 @@ section#portfolio {
       h2 {
         text-transform: uppercase;
         letter-spacing: 4px;
-        // font-style: italic;
         font-weight: 100;
         font-size: 1.4rem;
         margin-top: 40px;

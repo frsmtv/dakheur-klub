@@ -2,20 +2,10 @@
 
 header {
   text-align: center;
-  -webkit-transition: all 200ms ease-in;
-  -moz-transition: all 200ms ease-in;
-  -ms-transition: all 200ms ease-in;
-  -o-transition: all 200ms ease-in;
-  transition: all 200ms ease-in;
   @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
   background: $mainColor;
   color: #fff;
   height: 100px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
   }
   nav#main-nav {
     position: fixed;
@@ -65,7 +55,7 @@ header {
     display: block;
     }
     h1 {
-      position: fixed;
+      position: absolute;
       z-index: 1;
       top: 20px;
       left: 20px;
