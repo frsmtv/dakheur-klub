@@ -36,7 +36,12 @@
     left: 50%;
     top: 65%;
     transform: translate(-50%, -50%); /* Yep! */;
-    font-size: 1rem;
+    font-size: .8rem;
+  }
+  span#credits::before {
+    content: "pédé";
+    color: red;
+    font-size: 4rem;
   }
   a#houston {
     position: absolute;
