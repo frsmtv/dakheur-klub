@@ -6983,7 +6983,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .side-nav li > a.btn:hover, .side-nav li > a.btn-large:hover, .side-nav li > a.btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #0000FF;
 }
 
 .side-nav li > a.btn-floating:hover {
