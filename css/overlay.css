@@ -76,6 +76,7 @@
     list-style: none;
     letter-spacing: 2px;
     line-height: 2;
+    text-transform: uppercase;
     padding: 0;
 }
 .overlay ul li {
