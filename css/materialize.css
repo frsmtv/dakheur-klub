@@ -4954,7 +4954,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  /*background-color: #26a69a;*/
+  background-color: #0000FF;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
@@ -4962,7 +4962,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #0000FF;
 }
 
 .btn-floating {
@@ -4975,7 +4975,7 @@ small {
   height: 40px;
   line-height: 40px;
   padding: 0;
-  background-color: #26a69a;
+  background-color: #0000FF;
   border-radius: 50%;
   transition: .3s;
   cursor: pointer;
@@ -4983,7 +4983,7 @@ small {
 }
 
 .btn-floating:hover {
-  background-color: #26a69a;
+  background-color: #0000FF;
 }
 
 .btn-floating:before {
