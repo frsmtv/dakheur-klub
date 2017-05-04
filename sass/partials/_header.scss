@@ -66,6 +66,12 @@ header {
       top: 20px;
       left: 20px;
       color: #fff;
+      text-align: left;
+      span {
+        font-size: 50%;
+        font-family: $mainFont;
+        vertical-align: super;
+      }
     }
     span {
       margin-top: 5vh;
