@@ -22,10 +22,10 @@ form {
     border-bottom: 1px solid $mainColor!important;
     box-shadow: 0 1px 0 0 $mainColor!important;
   }
-  button, #envoyer, .btn, .waves-effect, .waves-light {
+  button, .btn, .waves-effect, .waves-light {
     margin-top: 50px;
     letter-spacing: 2px;
-    background: $mainColor!important;
+    background-color: $mainColor!important;
     -webkit-transition: all 400ms ease-in;
     -moz-transition: all 400ms ease-in;
     -ms-transition: all 400ms ease-in;
