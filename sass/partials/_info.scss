@@ -2,7 +2,7 @@
 
 div#brand {
   font-size: 4rem;
-  display: none;
+  // display: none;
   // position: fixed;
   // z-index: 999;
   // width: 100%;
@@ -37,7 +37,7 @@ div#brand {
         font-size: 95%;
       }
       &:first-child {
-        margin-top: 25vh;
+        margin-top: 0;
       }
     }
     q {
