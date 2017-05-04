@@ -31,13 +31,12 @@ div#brand {
       text-align: justify;
       margin: 10% 0;
       padding: 2%;
-      &:first-child {
-        margin-top: 25vh;
-      }
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-        width: 90%;
         margin: 5% 0;
         font-size: 95%;
+      }
+      &:first-child {
+        margin-top: 25vh;
       }
     }
     q {
