@@ -8,6 +8,9 @@ section#portfolio {
   ul {
     li {
       height: 100vh;
+      @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+        height: auto;
+      }
       text-align: center;
       display: inline-block;
       padding: 0 20px;
@@ -18,7 +21,7 @@ section#portfolio {
       -o-transition: all 100ms ease-in;
       transition: all 100ms ease-in;
       &:last-child {
-        height: auto;
+        height: 50vh;
       }
       &:hover {
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
@@ -49,22 +52,27 @@ section#portfolio {
       h2 {
         text-transform: uppercase;
         letter-spacing: 4px;
-        font-style: italic;
+        // font-style: italic;
         font-weight: 100;
         font-size: 1.4rem;
         margin-top: 40px;
-        span, i {
-          font-size: 50%;
-          border-left: 1px solid $mainColor;
-          padding-left: 20px;
-          vertical-align: middle;
-        }
-        span {
-          font-family: $navFont;
-          // font-style: normal;
-        }
         @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
           font-size: 1rem;
+        }
+      }
+      div.status {
+        display: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 80%;
+        i {
+          -moz-transition: all 200ms ease-in;
+          -ms-transition: all 200ms ease-in;
+          -o-transition: all 200ms ease-in;
+          transition: all 200ms ease-in;
+          &:hover {
+            opacity: .6;
+          }
         }
       }
     }

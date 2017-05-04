@@ -5,14 +5,18 @@ form {
   display: block;
   margin: 0 auto;
   padding-top: 10vh;
-  .lever, .switch {
-    background: $mainColor!important;
-  }
-  label.active, input.field {
+  label.active, input.field, textarea {
     color: $mainColor!important;
+  }
+  textarea:focus {
+    border-bottom: 1px solid $mainColor!important;
+    box-shadow: none!important;
   }
   span.lever::after {
     background: $mainColor!important;
+  }
+  .switch label input[type=checkbox]:checked + .lever {
+    background-color: $mainColor!important;
   }
   input:focus {
     border-bottom: 1px solid $mainColor!important;
