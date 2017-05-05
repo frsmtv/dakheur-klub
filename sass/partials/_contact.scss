@@ -12,10 +12,9 @@ section#contact {
   @media only screen
     and (min-device-width: 320px)
     and (max-device-width: 568px)
-    and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
       position: relative;
-      margin-top: 80px;
+      margin-top: 25vh;
   }
   ul {
     line-height: 3;
@@ -50,10 +49,18 @@ section#contact {
         letter-spacing: 4px;
         color: #fff;
         background: $mainColor;
-        @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
-          font-size: .7rem;
-          // padding: 2%;
+        /* ----------- Mobile ----------- */
+
+        /* Portrait and Landscape */
+        @media only screen
+          and (min-device-width: 320px)
+          and (max-device-width: 736px) {
+            display: none;
         }
+        // @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
+        //   font-size: .7rem;
+        //   // padding: 2%;
+        // }
         &:hover {
           opacity: .7;
           }
