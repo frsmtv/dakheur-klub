@@ -7,8 +7,14 @@ section#contact {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); /* Yep! */
-  @media only screen and (min-device-width : 320px) and (max-device-width : 680px) {
-    // top: 40%;
+  /* ----------- iPhone 5 and 5S ----------- */
+  /* Landscape */
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    // and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
+      bottom: 40px;
   }
   ul {
     line-height: 3;
