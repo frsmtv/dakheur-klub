@@ -1,19 +1,5 @@
 @import "mixins";
 
-div#brand {
-  font-size: 4rem;
-  // display: none;
-  // position: fixed;
-  // z-index: 999;
-  // width: 100%;
-  // top: 25vh;
-  // left: 5vw;
-  text-transform: uppercase;
-  @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
-    font-size: 2rem;
-  }
-}
-
 #info {
   div.section {
     height: 100vh;
@@ -38,6 +24,13 @@ div#brand {
       }
       &:first-child {
         margin-top: 0;
+      }
+      span#brand {
+        font-size: 4rem;
+        text-transform: uppercase;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
+          font-size: 2rem;
+        }
       }
     }
     q {
