@@ -1,10 +1,10 @@
 @import "mixins";
 
 #intro {
-  background: url('../img/bg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  // background: url('../img/bg.jpg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center bottom;
 }
 #intro, #success {
   -webkit-transition: all 200ms ease-in;
