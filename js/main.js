@@ -24,13 +24,13 @@ $(document).ready(function() {
    //  NAV HOVER EFFECT ON SECTIONS
    // MAIN MENU
    $('#main-nav a').not('.active').mouseover(function(){
-    //  $('#intro').css('opacity', '.4');
+     $('#intro').css('opacity', '.4');
     //  $('section').css('opacity', '.4');
      $('#main-nav a').not(this).css('opacity', '.3');
    })
 
    $('#main-nav a').not('.active').mouseout(function(){
-    //  $('#intro').css('opacity', '');
+     $('#intro').css('opacity', '');
     //  $('section').css('opacity', '');
      $('#main-nav a').not(this).css('opacity', '');
    })
