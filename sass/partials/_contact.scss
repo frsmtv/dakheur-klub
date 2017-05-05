@@ -14,7 +14,7 @@ section#contact {
     and (max-device-width: 568px)
     // and (-webkit-min-device-pixel-ratio: 2)
     and (orientation: landscape) {
-      bottom: 40px;
+      bottom: 0!important;
   }
   ul {
     line-height: 3;
