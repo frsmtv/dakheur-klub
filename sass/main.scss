@@ -11,13 +11,13 @@
 @import "partials/404";
 
 html, body {
-  // width: 100vw;
   height: 100vh;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: $mainFont;
   color: $mainColor;
+  // background: #000;
   font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -27,7 +27,6 @@ html, body {
 // SCROLLBARS
 ::-webkit-scrollbar {
     width: 8px;
-    // display: none;
 }
 ::-webkit-scrollbar-track {
     background-color: #fff;
@@ -108,7 +107,7 @@ h1 {
   font-size: 1.5rem;
   letter-spacing: 4px;
   color: $mainColor;
-  margin: 0 0 40px 0;  
+  margin: 0 0 40px 0;
 }
 
 main {
