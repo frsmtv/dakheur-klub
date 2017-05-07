@@ -8,11 +8,13 @@ header {
   height: 100px;
   }
   nav#main-nav {
+    color: #000;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9999;
     font-family: $navFont;
+    font-style: italic;
     letter-spacing: 4px;
     @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
     display: none;

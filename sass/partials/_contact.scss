@@ -38,9 +38,9 @@ section#contact {
       a {
         // text-transform: uppercase;
         // font-style: italic;
-        border-bottom: 2px solid rgba(0, 0, 255, 0);
+        border-bottom: 2px solid rgba(197, 148, 55, 0);
         &:hover {
-          border-bottom: 2px solid rgba(0, 0, 255, 1);
+          border-bottom: 2px solid rgba(197, 148, 55, 1);
         }
       }
       a#formlink {
@@ -48,6 +48,7 @@ section#contact {
         font-style: normal;
         letter-spacing: 4px;
         color: #fff;
+        font-weight: bold;
         background: $mainColor;
         /* ----------- Mobile ----------- */
 

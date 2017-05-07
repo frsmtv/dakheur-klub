@@ -17,7 +17,6 @@ html, body {
   box-sizing: border-box;
   font-family: $mainFont;
   color: $mainColor;
-  // background: #000;
   font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -108,6 +107,18 @@ h1 {
   letter-spacing: 4px;
   color: $mainColor;
   margin: 0 0 40px 0;
+}
+
+#frame {
+  width: 75vw;
+  height: 75vh;
+  border: 10px solid #000;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Yep! */
+
+
 }
 
 main {
