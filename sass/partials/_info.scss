@@ -41,13 +41,12 @@
       padding: 2%;
     }
     h3, h4 {
-      border: 2px solid #000;
       display: inline-block;
       text-transform: uppercase;
       letter-spacing: 2px;
       line-height: 1.5;
-      // background: $mainColor;
-      color: $mainColor;
+      background: $mainColor;
+      color: #fff;
       padding: 1%;
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
       font-size: .8rem;
