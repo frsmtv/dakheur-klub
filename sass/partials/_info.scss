@@ -27,7 +27,6 @@
         margin-top: 0;
       }
       span#brand {
-        border: 5px solid #000;
         color: $mainColor;
         font-size: 4rem;
         text-transform: uppercase;
@@ -41,20 +40,26 @@
       padding: 2%;
     }
     h3, h4 {
+      font-size: 2rem;
       display: inline-block;
       text-transform: uppercase;
       letter-spacing: 2px;
       line-height: 1.5;
-      background: $mainColor;
-      color: #fff;
-      padding: 1%;
+      color: $mainColor;
+      // padding: 1%;
       @media only screen and (min-device-width : 320px) and (max-device-width : 740px) {
       font-size: .8rem;
       }
     }
+    h5{
+      text-transform: uppercase;
+      font-size: 80%;
+      color: #000;
+      margin-top: -40px;
+    }
     div.vertical-line {
       width: 1px;
-      height: 400px;
+      height: 350px;
       background: $mainColor;
       margin: auto;
       margin-top: 40px;
